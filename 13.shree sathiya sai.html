@@ -1,0 +1,1836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site4People - Premium careers and employment portal for Sri Sathya Sai district. 12K+ job seekers, 900+ companies, 3000+ opportunities">
+    <meta name="keywords" content="jobs Sri Sathya Sai, careers Andhra Pradesh, employment opportunities, recruitment portal">
+    <meta name="author" content="Site4People">
+    <meta property="og:title" content="Site4People - Jobs & Careers in Sri Sathya Sai District">
+    <meta property="og:description" content="Discover premium career opportunities in Sri Sathya Sai. Trusted by 10,000+ job seekers.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Site4People - Jobs & Careers in Sri Sathya Sai">
+    <meta name="twitter:description" content="Premium employment portal for Sri Sathya Sai district, Andhra Pradesh">
+    <link rel="canonical" href="https://site4people.com/srisathyasai">
+    
+    <title>Site4People - Premium Jobs & Careers in Sri Sathya Sai District</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --dark-brown: #1f1b18;
+            --coffee-bronze: #4b3425;
+            --terracotta: #c96b3b;
+            --saffron-gold: #d9a441;
+            --sand-beige: #f6f0e6;
+            --desert-cream: #efe3d3;
+            --olive-sage: #66785f;
+            --muted-clay: #9b6b4f;
+            --transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+            color: var(--dark-brown);
+            background-color: var(--sand-beige);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+            backdrop-filter: blur(15px);
+            background: rgba(246, 240, 230, 0.85);
+            border-bottom: 1px solid rgba(217, 164, 65, 0.15);
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation: slideInDown 0.8s ease;
+        }
+
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dark-brown);
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 3rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-brown);
+            font-weight: 500;
+            font-size: 0.95rem;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--saffron-gold), var(--terracotta));
+            transition: width 0.4s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--terracotta);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 6px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 2.5px;
+            background: var(--dark-brown);
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                background: rgba(246, 240, 230, 0.98);
+                padding: 2rem;
+                gap: 1.5rem;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            nav {
+                padding: 1rem 1.5rem;
+            }
+        }
+
+        /* HERO SECTION */
+       .hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 70px;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(31, 27, 24, 0.45) 0%,
+        rgba(201, 107, 59, 0.35) 100%
+    ),
+    url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=1600&auto=format&fit=crop')
+    center/cover no-repeat;
+
+    background-attachment: fixed;
+}
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 100%, rgba(217, 164, 65, 0.15) 0%, transparent 70%);
+            z-index: 0;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, transparent 0%, rgba(31, 27, 24, 0.2) 100%);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            animation: fadeInUp 1s ease both;
+            max-width: 900px;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-size: 4.5rem;
+            color: var(--sand-beige);
+            margin-bottom: 1rem;
+            text-shadow: 0 6px 30px rgba(31, 27, 24, 0.3);
+            letter-spacing: -1px;
+            line-height: 1.1;
+            font-weight: 700;
+        }
+
+        .hero .subtitle {
+            font-size: 1.4rem;
+            color: rgba(246, 240, 230, 0.95);
+            margin-bottom: 2.5rem;
+            text-shadow: 0 3px 15px rgba(31, 27, 24, 0.2);
+            font-weight: 300;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(217, 164, 65, 0.15);
+            border: 1px solid rgba(217, 164, 65, 0.4);
+            padding: 0.8rem 1.8rem;
+            border-radius: 50px;
+            color: var(--saffron-gold);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            animation: float 3.5s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.8rem;
+            justify-content: center;
+            margin-bottom: 4rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1.1rem 2.8rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+            font-family: 'Manrope', sans-serif;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--saffron-gold), var(--terracotta));
+            color: white;
+            box-shadow: 0 8px 30px rgba(217, 164, 65, 0.25);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(217, 164, 65, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(246, 240, 230, 0.12);
+            color: var(--sand-beige);
+            border: 1.5px solid rgba(246, 240, 230, 0.35);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(246, 240, 230, 0.2);
+            transform: translateY(-3px);
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 2rem;
+            border-radius: 2px;
+            color: white;
+            text-align: center;
+            animation: fadeUp 1s ease both;
+        }
+
+        .stat-card:nth-child(2) { animation-delay: 0.15s; }
+        .stat-card:nth-child(3) { animation-delay: 0.3s; }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .stat-number {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--saffron-gold);
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: rgba(246, 240, 230, 0.85);
+            margin-top: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        /* SECTIONS */
+        .section {
+            padding: 6rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 3.2rem;
+            color: var(--dark-brown);
+            margin-bottom: 1rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--muted-clay);
+            text-align: center;
+            margin-bottom: 3rem;
+            font-weight: 400;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--saffron-gold), var(--terracotta));
+            margin: 1.2rem auto 0;
+            border-radius: 2px;
+        }
+
+        /* WORK HISTORY SECTION */
+        .work-history {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .history-card {
+            background: white;
+            border-radius: 2px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(31, 27, 24, 0.08);
+            transition: var(--transition);
+            border-top: 4px solid var(--saffron-gold);
+            animation: slideUpCard 0.8s ease both;
+        }
+
+        .history-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(31, 27, 24, 0.15);
+        }
+
+        @keyframes slideUpCard {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .history-card:nth-child(2) { animation-delay: 0.1s; }
+        .history-card:nth-child(3) { animation-delay: 0.2s; }
+        .history-card:nth-child(4) { animation-delay: 0.3s; }
+        .history-card:nth-child(5) { animation-delay: 0.4s; }
+        .history-card:nth-child(6) { animation-delay: 0.5s; }
+
+        .history-icon {
+            font-size: 3rem;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(217, 164, 65, 0.08), rgba(201, 107, 59, 0.08));
+        }
+
+        .history-content {
+            padding: 2rem;
+        }
+
+        .history-content h3 {
+            color: var(--dark-brown);
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .history-content p {
+            color: #666;
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+
+        /* TIMELINE SECTION */
+        .timeline {
+            position: relative;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--saffron-gold), var(--terracotta));
+        }
+
+        .timeline-item {
+            margin-bottom: 3.5rem;
+            width: 48%;
+            animation: slideUpCard 0.8s ease both;
+        }
+
+        .timeline-item:nth-child(odd) {
+            margin-left: 0;
+            margin-right: auto;
+            text-align: right;
+            padding-right: 5%;
+        }
+
+        .timeline-item:nth-child(even) {
+            margin-left: auto;
+            margin-right: 0;
+            padding-left: 5%;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 18px;
+            height: 18px;
+            background: var(--saffron-gold);
+            border: 4px solid var(--sand-beige);
+            border-radius: 50%;
+            top: 12px;
+            box-shadow: 0 0 0 6px rgba(217, 164, 65, 0.15);
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 2px;
+            box-shadow: 0 6px 20px rgba(31, 27, 24, 0.08);
+            border-left: 3px solid var(--olive-sage);
+            position: relative;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            border-left: none;
+            border-right: 3px solid var(--olive-sage);
+        }
+
+        .timeline-year {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--saffron-gold);
+            margin-bottom: 0.7rem;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .timeline-text {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 0;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 60px !important;
+                padding-right: 0 !important;
+                text-align: left !important;
+                margin-right: 0 !important;
+            }
+
+            .timeline-dot {
+                left: 0;
+                transform: translateX(-50%);
+            }
+
+            .timeline-content {
+                border-left: 3px solid var(--olive-sage) !important;
+                border-right: none !important;
+            }
+        }
+
+        /* JOB MARKET SECTION */
+        .job-market {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2.2rem;
+        }
+
+        .market-card {
+            background: white;
+            border-radius: 2px;
+            padding: 2.2rem;
+            box-shadow: 0 6px 20px rgba(31, 27, 24, 0.08);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            animation: slideUpCard 0.8s ease both;
+        }
+
+        .market-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 40px rgba(31, 27, 24, 0.12);
+        }
+
+        .market-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--saffron-gold), var(--terracotta));
+        }
+
+        .market-card:nth-child(2) { animation-delay: 0.1s; }
+        .market-card:nth-child(3) { animation-delay: 0.2s; }
+        .market-card:nth-child(4) { animation-delay: 0.3s; }
+        .market-card:nth-child(5) { animation-delay: 0.4s; }
+        .market-card:nth-child(6) { animation-delay: 0.5s; }
+        .market-card:nth-child(7) { animation-delay: 0.6s; }
+        .market-card:nth-child(8) { animation-delay: 0.7s; }
+
+        /* COMPANY IMAGES */
+.company-card:nth-child(1) .company-header {
+    background:
+        linear-gradient(rgba(31,27,24,0.35), rgba(31,27,24,0.35)),
+        url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
+}
+
+.company-card:nth-child(2) .company-header {
+    background:
+        linear-gradient(rgba(31,27,24,0.35), rgba(31,27,24,0.35)),
+        url('https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
+}
+
+.company-card:nth-child(3) .company-header {
+    background:
+        linear-gradient(rgba(31,27,24,0.35), rgba(31,27,24,0.35)),
+        url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
+}
+
+
+.company-card:nth-child(4) .company-header {
+    background:
+        linear-gradient(rgba(31,27,24,0.35), rgba(31,27,24,0.35)),
+        url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
+}
+
+.company-card:nth-child(5) .company-header {
+    background:
+        linear-gradient(rgba(31,27,24,0.35), rgba(31,27,24,0.35)),
+        url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
+}
+
+.company-card:nth-child(6) .company-header {
+    background:
+        linear-gradient(rgba(31,27,24,0.35), rgba(31,27,24,0.35)),
+        url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
+}
+
+        .market-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .market-card h3 {
+            color: var(--dark-brown);
+            margin-bottom: 1.2rem;
+            font-size: 1.3rem;
+        }
+
+        .market-growth {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .growth-percentage {
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: var(--terracotta);
+        }
+
+        .growth-trend {
+            color: var(--olive-sage);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .progress-bar {
+            height: 6px;
+            background: #e8e2d8;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 1.2rem;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--saffron-gold), var(--terracotta));
+            border-radius: 3px;
+            animation: fillBar 1.2s ease both;
+        }
+
+        @keyframes fillBar {
+            from { width: 0; }
+            to { width: var(--progress); }
+        }
+
+        .market-description {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+
+        /* COMPANIES SECTION */
+        .companies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .company-card {
+            background: white;
+            border-radius: 2px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(31, 27, 24, 0.08);
+            transition: var(--transition);
+            animation: slideUpCard 0.8s ease both;
+            position: relative;
+        }
+
+        .company-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(31, 27, 24, 0.15);
+        }
+
+        .company-card:nth-child(2) { animation-delay: 0.1s; }
+        .company-card:nth-child(3) { animation-delay: 0.2s; }
+        .company-card:nth-child(4) { animation-delay: 0.3s; }
+        .company-card:nth-child(5) { animation-delay: 0.4s; }
+        .company-card:nth-child(6) { animation-delay: 0.5s; }
+
+        .company-header {
+            height: 160px;
+            background: linear-gradient(135deg, rgba(217, 164, 65, 0.08), rgba(201, 107, 59, 0.08));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+
+        .company-header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(31, 27, 24, 0.15);
+            z-index: 1;
+        }
+
+        .company-header:hover {
+            background-position: center;
+        }
+
+        .company-logo {
+            font-size: 3.5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .company-content {
+            padding: 2rem;
+        }
+
+        .company-name {
+            font-size: 1.25rem;
+            color: var(--dark-brown);
+            margin-bottom: 0.7rem;
+            font-weight: 600;
+        }
+
+        .company-badges {
+            display: flex;
+            gap: 0.8rem;
+            margin-bottom: 1.2rem;
+            flex-wrap: wrap;
+        }
+
+        .company-industry {
+            display: inline-block;
+            background: rgba(217, 164, 65, 0.1);
+            color: var(--terracotta);
+            padding: 0.45rem 0.9rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .company-hiring {
+            background: rgba(102, 120, 95, 0.1);
+            color: var(--olive-sage);
+            padding: 0.45rem 0.9rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            display: inline-block;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .company-description {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.7;
+            margin-bottom: 1.2rem;
+        }
+
+        .company-link {
+            color: var(--terracotta);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .company-link:hover {
+            color: var(--saffron-gold);
+        }
+
+        /* APPLICATION FORM */
+        .form-section {
+            background: linear-gradient(135deg, rgba(217, 164, 65, 0.05), rgba(102, 120, 95, 0.05));
+            padding: 4rem 2rem;
+            border-radius: 2px;
+            max-width: 650px;
+            margin: 0 auto;
+            border: 1px solid rgba(217, 164, 65, 0.1);
+        }
+
+        .form-title {
+            font-size: 2.3rem;
+            color: var(--dark-brown);
+            text-align: center;
+            margin-bottom: 2rem;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .form-group {
+            margin-bottom: 1.8rem;
+            animation: slideUpCard 0.6s ease both;
+        }
+
+        .form-group:nth-child(2) { animation-delay: 0.1s; }
+        .form-group:nth-child(3) { animation-delay: 0.2s; }
+        .form-group:nth-child(4) { animation-delay: 0.3s; }
+        .form-group:nth-child(5) { animation-delay: 0.4s; }
+        .form-group:nth-child(6) { animation-delay: 0.5s; }
+        .form-group:nth-child(7) { animation-delay: 0.6s; }
+
+        label {
+            display: block;
+            margin-bottom: 0.6rem;
+            color: var(--dark-brown);
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 0.3px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1.5px solid rgba(31, 27, 24, 0.1);
+            border-radius: 2px;
+            font-family: 'Manrope', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+            background: white;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--saffron-gold);
+            box-shadow: 0 0 0 3px rgba(217, 164, 65, 0.1);
+            background: white;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 1.2rem;
+            background: linear-gradient(135deg, var(--saffron-gold), var(--terracotta));
+            color: white;
+            border: none;
+            border-radius: 2px;
+            font-size: 1rem;
+            font-weight: 600;
+            font-family: 'Manrope', sans-serif;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 8px 25px rgba(217, 164, 65, 0.25);
+            margin-top: 0.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        .form-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(217, 164, 65, 0.4);
+        }
+
+        .success-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 2.5rem;
+            border-radius: 2px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(31, 27, 24, 0.2);
+            z-index: 1000;
+            animation: popIn 0.5s ease both;
+            display: none;
+        }
+
+        @keyframes popIn {
+            from {
+                opacity: 0;
+                transform: translate(-50%, -55%);
+                scale: 0.85;
+            }
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+                scale: 1;
+            }
+        }
+
+        .success-popup.show {
+            display: block;
+        }
+
+        .success-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .success-popup h3 {
+            color: var(--dark-brown);
+            margin-bottom: 0.5rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+        }
+
+        .success-popup p {
+            color: #666;
+        }
+
+        .form-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(31, 27, 24, 0.4);
+            z-index: 999;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+
+        .form-overlay.show {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        /* TESTIMONIALS */
+        .testimonials-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 2px;
+            box-shadow: 0 8px 25px rgba(31, 27, 24, 0.08);
+            transition: var(--transition);
+            border-left: 4px solid var(--saffron-gold);
+            animation: slideUpCard 0.8s ease both;
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 40px rgba(31, 27, 24, 0.12);
+        }
+
+        .testimonial-card:nth-child(2) { animation-delay: 0.1s; }
+        .testimonial-card:nth-child(3) { animation-delay: 0.2s; }
+
+        .testimonial-card::before {
+            content: '"';
+            font-size: 4rem;
+            color: rgba(217, 164, 65, 0.15);
+            position: absolute;
+            top: -15px;
+            left: 15px;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+
+        .stars {
+            color: var(--saffron-gold);
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+            letter-spacing: 3px;
+        }
+
+        .testimonial-text {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            color: var(--dark-brown);
+            margin-bottom: 0.3rem;
+            font-size: 0.95rem;
+        }
+
+        .testimonial-role {
+            color: var(--terracotta);
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* FOOTER */
+        footer {
+            background: linear-gradient(135deg, var(--dark-brown) 0%, var(--coffee-bronze) 100%);
+            color: white;
+            padding: 4rem 2rem 1.5rem;
+            position: relative;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--saffron-gold), var(--terracotta));
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 1.3rem;
+            font-size: 1.2rem;
+            letter-spacing: 0.5px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-section a {
+            color: rgba(246, 240, 230, 0.7);
+            text-decoration: none;
+            transition: 0.3s;
+            font-size: 0.95rem;
+        }
+
+        .footer-section a:hover {
+            color: var(--saffron-gold);
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 0.9rem;
+            border: 1px solid rgba(246, 240, 230, 0.2);
+            border-radius: 2px;
+            background: rgba(255, 255, 255, 0.08);
+            color: white;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .newsletter-form input::placeholder {
+            color: rgba(246, 240, 230, 0.5);
+        }
+
+        .newsletter-form button {
+            padding: 0.9rem 1.8rem;
+            background: linear-gradient(135deg, var(--saffron-gold), var(--terracotta));
+            border: none;
+            border-radius: 2px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .newsletter-form button:hover {
+            transform: translateY(-2px);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1.2rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-icons a {
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(246, 240, 230, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            color: rgba(246, 240, 230, 0.8);
+        }
+
+        .social-icons a:hover {
+            background: var(--saffron-gold);
+            border-color: var(--saffron-gold);
+            color: var(--dark-brown);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(246, 240, 230, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(246, 240, 230, 0.6);
+            font-size: 0.9rem;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .section {
+                padding: 4rem 1.5rem;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .work-history, .job-market, .companies-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: var(--transition);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- JSON-LD Schemas -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Site4People",
+        "url": "https://site4people.com",
+        "description": "Premium careers and employment portal for Sri Sathya Sai district",
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Andhra Pradesh",
+            "addressCountry": "IN"
+        }
+    }
+    </script>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo">Site4People</a>
+        <ul class="nav-links">
+            <li><a href="#work-history">Work History</a></li>
+            <li><a href="#employment">Evolution</a></li>
+            <li><a href="#job-market">Market</a></li>
+            <li><a href="#companies">Companies</a></li>
+            <li><a href="#apply">Apply</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="badge">⭐ Trusted by 10,000+ Job Seekers</div>
+            <h1>Jobs & Career Opportunities in Sri Sathya Sai</h1>
+            <p class="subtitle">Discover Growth, Employment & Opportunities Across Andhra Pradesh</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('apply').scrollIntoView({behavior: 'smooth'})">Explore Careers</button>
+                <button class="btn btn-secondary" onclick="document.getElementById('apply').scrollIntoView({behavior: 'smooth'})">Apply Now</button>
+            </div>
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number">12K+</div>
+                    <div class="stat-label">Job Seekers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">900+</div>
+                    <div class="stat-label">Companies</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3K+</div>
+                    <div class="stat-label">Opportunities</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work History Section -->
+    <section id="work-history" class="section">
+        <h2 class="section-title">Work & Economy Heritage</h2>
+        <p class="section-subtitle">Understanding the rich professional landscape of Sri Sathya Sai district</p>
+        <div class="work-history">
+            <div class="history-card">
+                <div class="history-icon">🌾</div>
+                <div class="history-content">
+                    <h3>Agriculture</h3>
+                    <p>Foundational economy with rice cultivation, sugarcane farming, and spice production driving rural prosperity and employment.</p>
+                </div>
+            </div>
+            <div class="history-card">
+                <div class="history-icon">🏪</div>
+                <div class="history-content">
+                    <h3>Local Businesses</h3>
+                    <p>Thriving retail and commerce sector with traditional shops, markets, and emerging modern retail establishments.</p>
+                </div>
+            </div>
+            <div class="history-card">
+                <div class="history-icon">🛠️</div>
+                <div class="history-content">
+                    <h3>Traditional Crafts</h3>
+                    <p>Skilled artisanship in pottery, weaving, and handicrafts preserving heritage while creating sustainable livelihoods.</p>
+                </div>
+            </div>
+            <div class="history-card">
+                <div class="history-icon">🏭</div>
+                <div class="history-content">
+                    <h3>Rural Industries</h3>
+                    <p>Manufacturing units and processing facilities transforming agricultural produce into value-added products.</p>
+                </div>
+            </div>
+            <div class="history-card">
+                <div class="history-icon">🚚</div>
+                <div class="history-content">
+                    <h3>Trade & Transport</h3>
+                    <p>Commerce networks connecting districts with logistics, warehousing, and transportation services growing steadily.</p>
+                </div>
+            </div>
+            <div class="history-card">
+                <div class="history-icon">👨‍💼</div>
+                <div class="history-content">
+                    <h3>Professional Services</h3>
+                    <p>Emerging services sector including education, healthcare, consulting, and administrative employment opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employment Evolution Section -->
+    <section id="employment" class="section">
+        <h2 class="section-title">Employment Evolution</h2>
+        <p class="section-subtitle">Journey from traditional to modern career opportunities</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">Pre-1950</div>
+                    <div class="timeline-text">Agriculture and traditional crafts dominated the economy. Agrarian society with family-based occupations and feudal structures.</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">1950-1980</div>
+                    <div class="timeline-text">Post-independence government expansion created administrative jobs, schools, hospitals, and public sector opportunities.</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">1980-2000</div>
+                    <div class="timeline-text">Private sector emergence with manufacturing, retail chains, and processing industries creating diverse employment sectors.</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">2000-2015</div>
+                    <div class="timeline-text">Technology and service sector growth brought IT services, healthcare expansion, logistics boom, and tourism development.</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">2015-Present</div>
+                    <div class="timeline-text">Digital transformation, startups, skill development, e-commerce, and sustainable business practices creating modern career paths.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Market Section -->
+    <section id="job-market" class="section">
+        <h2 class="section-title">Current Job Market</h2>
+        <p class="section-subtitle">Thriving employment sectors across the district</p>
+        <div class="job-market">
+            <div class="market-card">
+                <div class="market-icon">🌾</div>
+                <h3>Agriculture</h3>
+                <div class="market-growth">
+                    <span class="growth-percentage">+14%</span>
+                    <span class="growth-trend">Stable</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="--progress: 75%;"></div>
+                </div>
+                <p class="market-description">Farm management, organic farming, and agricultural exports showing consistent growth.</p>
+            </div>
+
+            <div class="market-card">
+                <div class="market-icon">⚕️</div>
+                <h3>Healthcare</h3>
+                <div class="market-growth">
+                    <span class="growth-percentage">+22%</span>
+                    <span class="growth-trend">Growing</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="--progress: 85%;"></div>
+                </div>
+                <p class="market-description">Hospitals, clinics, and healthcare services expanding with demand for medical professionals.</p>
+            </div>
+
+            <div class="market-card">
+                <div class="market-icon">🎓</div>
+                <h3>Education</h3>
+                <div class="market-growth">
+                    <span class="growth-percentage">+18%</span>
+                    <span class="growth-trend">Expanding</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="--progress: 80%;"></div>
+                </div>
+                <p class="market-description">Schools, colleges, and training institutes creating teaching and administrative roles.</p>
+            </div>
+
+            <div class="market-card">
+                <div class="market-icon">🛒</div>
+                <h3>Retail</h3>
+                <div class="market-growth">
+                    <span class="growth-percentage">+20%</span>
+                    <span class="growth-trend">Surging</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="--progress: 78%;"></div>
+                </div>
+                <p class="market-description">Modern retail chains and e-commerce transforming shopping and creating jobs.</p>
+            </div>
+
+            <div class="market-card">
+                <div class="market-icon">🚚</div>
+                <h3>Logistics</h3>
+                <div class="market-growth">
+                    <span class="growth-percentage">+25%</span>
+                    <span class="growth-trend">Booming</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="--progress: 88%;"></div>
+                </div>
+                <p class="market-description">Transportation, warehousing, and supply chain becoming major employment sectors.</p>
+            </div>
+
+            <div class="market-card">
+                <div class="market-icon">🏭</div>
+                <h3>Manufacturing</h3>
+                <div class="market-growth">
+                    <span class="growth-percentage">+16%</span>
+                    <span class="growth-trend">Growing</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="--progress: 72%;"></div>
+                </div>
+                <p class="market-description">Food processing and textile industries generating skilled manufacturing employment.</p>
+            </div>
+
+            <div class="market-card">
+                <div class="market-icon">✈️</div>
+                <h3>Tourism</h3>
+                <div class="market-growth">
+                    <span class="growth-percentage">+19%</span>
+                    <span class="growth-trend">Rising</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="--progress: 70%;"></div>
+                </div>
+                <p class="market-description">Heritage and spiritual tourism creating hospitality, guide, and service roles.</p>
+            </div>
+
+            <div class="market-card">
+                <div class="market-icon">💻</div>
+                <h3>IT & Digital</h3>
+                <div class="market-growth">
+                    <span class="growth-percentage">+32%</span>
+                    <span class="growth-trend">Explosive</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="--progress: 65%;"></div>
+                </div>
+                <p class="market-description">Digital services, startups, and tech training creating innovative career opportunities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Companies Section -->
+    <section id="companies" class="section">
+        <h2 class="section-title">Featured Employers</h2>
+        <p class="section-subtitle">Trusted organizations driving regional growth</p>
+        <div class="companies-grid">
+            <div class="company-card">
+                <div class="company-header">🌾</div>
+                <div class="company-content">
+                    <div class="company-name">GreenField Agriculture Ltd</div>
+                    <div class="company-badges">
+                        <span class="company-industry">Agriculture</span>
+                        <span class="company-hiring">🟢 Hiring</span>
+                    </div>
+                    <p class="company-description">Sustainable farming enterprise promoting modern agricultural practices and rural development.</p>
+                    <a href="#" class="company-link">Explore →</a>
+                </div>
+            </div>
+
+            <div class="company-card">
+                <div class="company-header">🏥</div>
+                <div class="company-content">
+                    <div class="company-name">Care Plus Healthcare</div>
+                    <div class="company-badges">
+                        <span class="company-industry">Healthcare</span>
+                        <span class="company-hiring">🟢 Hiring</span>
+                    </div>
+                    <p class="company-description">Multi-specialty health center providing quality medical services and employment opportunities.</p>
+                    <a href="#" class="company-link">Explore →</a>
+                </div>
+            </div>
+
+            <div class="company-card">
+                <div class="company-header"></div>
+                <div class="company-content">
+                    <div class="company-name">Scholars Academy</div>
+                    <div class="company-badges">
+                        <span class="company-industry">Education</span>
+                        <span class="company-hiring">🟢 Hiring</span>
+                    </div>
+                    <p class="company-description">Premier educational institution offering quality education and teacher recruitment programs.</p>
+                    <a href="#" class="company-link">Explore →</a>
+                </div>
+            </div>
+
+            <div class="company-card">
+                <div class="company-header"></div>
+                <div class="company-content">
+                    <div class="company-name">Modern Retail Group</div>
+                    <div class="company-badges">
+                        <span class="company-industry">Retail</span>
+                        <span class="company-hiring">🟢 Hiring</span>
+                    </div>
+                    <p class="company-description">Contemporary retail network providing diverse employment in sales, management, and logistics.</p>
+                    <a href="#" class="company-link">Explore →</a>
+                </div>
+            </div>
+
+            <div class="company-card">
+                <div class="company-header"></div>
+                <div class="company-content">
+                    <div class="company-name">Connect Logistics</div>
+                    <div class="company-badges">
+                        <span class="company-industry">Logistics</span>
+                        <span class="company-hiring">🟢 Hiring</span>
+                    </div>
+                    <p class="company-description">Supply chain and transportation leader creating opportunities for drivers, coordinators, and managers.</p>
+                    <a href="#" class="company-link">Explore →</a>
+                </div>
+            </div>
+
+            <div class="company-card">
+                <div class="company-header"></div>
+                <div class="company-content">
+                    <div class="company-name">Digital Solutions Inc</div>
+                    <div class="company-badges">
+                        <span class="company-industry">IT & Digital</span>
+                        <span class="company-hiring">🟢 Hiring</span>
+                    </div>
+                    <p class="company-description">Technology company developing digital services and creating skilled tech employment opportunities.</p>
+                    <a href="#" class="company-link">Explore →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form Section -->
+    <section id="apply" class="section">
+        <div class="form-section">
+            <h2 class="form-title">Apply Now — Send Us Your Profile</h2>
+            <form id="applicationForm" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">Mobile Number (+91) *</label>
+                    <input type="tel" id="mobile" name="mobile" placeholder="+91 XXXXXXXXXX" pattern="[0-9]{10}" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="about">Tell Us About Yourself *</label>
+                    <textarea id="about" name="about" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="careerInterest">Career Interest *</label>
+                    <select id="careerInterest" name="careerInterest" required>
+                        <option value="">Select a field of interest</option>
+                        <option value="agriculture">Agriculture</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="education">Education</option>
+                        <option value="retail">Retail</option>
+                        <option value="logistics">Logistics</option>
+                        <option value="manufacturing">Manufacturing</option>
+                        <option value="tourism">Tourism</option>
+                        <option value="it">IT & Digital Services</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="resume">Resume/CV (Optional)</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+                </div>
+
+                <button type="submit" class="form-submit">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section">
+        <h2 class="section-title">Success Stories</h2>
+        <p class="section-subtitle">Real experiences from our community</p>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Site4People transformed my job search. I found the perfect healthcare position matching my qualifications. The process was smooth and professional!"</p>
+                <div class="testimonial-author">Dr. Meera Sharma</div>
+                <div class="testimonial-role">Senior Nurse, Care Plus Healthcare</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"As a recent graduate, I was uncertain about my career path. Site4People connected me with Scholars Academy where I now teach. Great platform!"</p>
+                <div class="testimonial-author">Arjun Patel</div>
+                <div class="testimonial-role">Mathematics Teacher, Scholars Academy</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"I found skilled logistics professionals through Site4People for my growing company. The quality of candidates and ease of hiring is excellent."</p>
+                <div class="testimonial-author">Rajesh Kumar</div>
+                <div class="testimonial-role">CEO, Connect Logistics</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Site4People</h4>
+                <p>Premium employment portal connecting talent with opportunity across Sri Sathya Sai district.</p>
+                <div class="social-icons">
+                    <a href="#">f</a>
+                    <a href="#">𝕏</a>
+                    <a href="#">in</a>
+                    <a href="#">📷</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#work-history">Work History</a></li>
+                    <li><a href="#employment">Evolution</a></li>
+                    <li><a href="#job-market">Market</a></li>
+                    <li><a href="#companies">Companies</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Career Tips</a></li>
+                    <li><a href="#">Resume Guide</a></li>
+                    <li><a href="#">Job Alerts</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Get exclusive job updates and career opportunities delivered to your inbox.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Site4People. All rights reserved. | <a href="#" style="color: var(--saffron-gold);">Privacy Policy</a> | <a href="#" style="color: var(--saffron-gold);">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <!-- Success Popup -->
+    <div class="form-overlay" id="formOverlay"></div>
+    <div class="success-popup" id="successPopup">
+        <div class="success-icon">🎉</div>
+        <h3>We'll Be In Touch Soon!</h3>
+        <p>Thank you for your application. Our team will review your profile and contact you shortly.</p>
+    </div>
+
+    <script>
+        // Hamburger Menu
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (hamburger && navLinks) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
+            });
+        }
+
+        // Form Validation and Submission
+        function handleFormSubmit(event) {
+            event.preventDefault();
+
+            const fullName = document.getElementById('fullName').value.trim();
+            const mobile = document.getElementById('mobile').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const about = document.getElementById('about').value.trim();
+            const careerInterest = document.getElementById('careerInterest').value;
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address');
+                return;
+            }
+
+            if (!/^\d{10}$/.test(mobile)) {
+                alert('Please enter a valid 10-digit mobile number');
+                return;
+            }
+
+            if (!fullName || !about || !careerInterest) {
+                alert('Please fill all required fields');
+                return;
+            }
+
+            showSuccessPopup();
+            document.getElementById('applicationForm').reset();
+        }
+
+        function showSuccessPopup() {
+            const overlay = document.getElementById('formOverlay');
+            const popup = document.getElementById('successPopup');
+
+            overlay.classList.add('show');
+            popup.classList.add('show');
+
+            setTimeout(() => {
+                overlay.classList.remove('show');
+                popup.classList.remove('show');
+            }, 3500);
+        }
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.history-card, .market-card, .company-card, .testimonial-card').forEach(el => {
+            el.classList.add('reveal');
+            observer.observe(el);
+        });
+
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Animate stat counters
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 80;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current);
+                }
+            }, 25);
+        }
+
+        // Trigger counter animation on scroll
+        const statCards = document.querySelectorAll('.stat-card');
+        
+        if (statCards.length > 0) {
+            const statsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const numberEl = entry.target.querySelector('.stat-number');
+                        if (numberEl) {
+                            const numberText = numberEl.textContent.replace(/\D/g, '');
+                            const target = parseInt(numberText);
+                            if (!entry.target.classList.contains('animated')) {
+                                animateCounter(numberEl, target);
+                                entry.target.classList.add('animated');
+                            }
+                        }
+                        statsObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            statCards.forEach(card => statsObserver.observe(card));
+        }
+
+        // Newsletter subscription
+        const newsletterBtn = document.querySelector('.newsletter-form button');
+        const newsletterInput = document.querySelector('.newsletter-form input');
+        
+        if (newsletterBtn && newsletterInput) {
+            newsletterBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const email = newsletterInput.value.trim();
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                
+                if (email === '') {
+                    alert('Please enter your email address');
+                } else if (!emailRegex.test(email)) {
+                    alert('Please enter a valid email address');
+                } else {
+                    alert('Thank you for subscribing! Check your inbox for updates.');
+                    newsletterInput.value = '';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabarkantha Jobs & Vacancies 2025 | Site4People</title>
+  <meta name="description" content="Find the latest jobs, vacancies, and career opportunities in Sabarkantha, Gujarat. Explore top companies, job market trends, and apply directly on Site4People.">
+  <meta name="keywords" content="Sabarkantha jobs, vacancies in Sabarkantha, Gujarat employment, jobs near Sabarkantha, Sabarkantha career opportunities, Site4People">
+  <meta name="author" content="Site4People">
+  <link rel="canonical" href="https://site4people.com/jobs/sabarkantha/">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito:wght@300;400;600;700;800&display=swap');
+
+    :root{
+      --dark:#0f172a;
+      --dark2:#1e293b;
+      --gold:#c9a227;
+      --goldlight:#f5d76e;
+      --white:#ffffff;
+      --light:#f8fafc;
+      --text:#374151;
+    }
+
+    *{ margin:0; padding:0; box-sizing:border-box; }
+
+    body{
+      font-family:'Nunito',sans-serif;
+      background:var(--light);
+      color:var(--text);
+      overflow-x:hidden;
+    }
+
+    /* ─── HEADER ─── */
+    header{
+      background:rgba(15,23,42,0.95);
+      position:sticky;
+      top:0;
+      z-index:1000;
+      backdrop-filter:blur(10px);
+    }
+    .header-inner{
+      max-width:1200px;
+      margin:auto;
+      height:70px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:0 20px;
+    }
+    .logo{ color:white; font-size:28px; text-decoration:none; font-family:'DM Serif Display',serif; }
+    .logo span{ color:var(--goldlight); }
+    nav{ display:flex; gap:25px; }
+    nav a{ color:white; text-decoration:none; font-weight:700; }
+
+    /* ─── HERO ─── */
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      position:relative;
+      overflow:hidden;
+    }
+    .hero::before{
+      content:'';
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(rgba(0,0,0,0.58),rgba(0,0,0,0.58)),
+        url('https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=2096&auto=format&fit=crop') center/cover no-repeat;
+    }
+    .hero-content{
+      position:relative;
+      z-index:2;
+      max-width:1200px;
+      margin:auto;
+      padding:50px 20px;
+      color:white;
+    }
+    .badge{
+      display:inline-block;
+      background:rgba(201,162,39,0.2);
+      border:1px solid rgba(201,162,39,0.5);
+      color:var(--goldlight);
+      padding:8px 18px;
+      border-radius:50px;
+      margin-bottom:25px;
+      font-weight:700;
+    }
+    h1{ font-size:70px; font-family:'DM Serif Display',serif; line-height:1.1; margin-bottom:20px; }
+    h1 em{ color:var(--goldlight); font-style:italic; }
+    .hero p{ max-width:650px; font-size:20px; margin-bottom:35px; color:#ddd; }
+    .btns{ display:flex; gap:20px; flex-wrap:wrap; }
+    .btn{ padding:15px 28px; border-radius:8px; text-decoration:none; font-weight:800; transition:0.3s; }
+    .btn-primary{ background:var(--gold); color:white; }
+    .btn-primary:hover{ background:var(--goldlight); transform:translateY(-3px); }
+    .btn-outline{ border:1px solid white; color:white; }
+    .btn-outline:hover{ background:white; color:black; }
+    .stats{ margin-top:60px; display:flex; gap:50px; flex-wrap:wrap; }
+    .stat .num{ font-size:42px; font-family:'DM Serif Display',serif; color:var(--goldlight); }
+    .stat .label{ font-size:14px; text-transform:uppercase; letter-spacing:1px; color:#ccc; }
+
+    /* ─── GENERAL SECTION ─── */
+    section{ padding:90px 20px; }
+    .container{ max-width:1200px; margin:auto; }
+    .section-label{ color:var(--gold); text-transform:uppercase; font-size:14px; font-weight:800; margin-bottom:10px; }
+    .section-title{ font-size:50px; color:var(--dark); font-family:'DM Serif Display',serif; margin-bottom:20px; }
+    .section-desc{ max-width:700px; line-height:1.8; margin-bottom:50px; }
+
+    /* ─── IMAGE CARDS ─── */
+    .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:25px; }
+
+    .card{
+      background:white;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 8px 25px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+    .card:hover{ transform:translateY(-6px); box-shadow:0 16px 40px rgba(0,0,0,0.14); }
+
+    .card-img{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+      display:block;
+    }
+
+    .card-body{ padding:28px 28px 30px; }
+    .card-body h3{ font-size:24px; color:var(--dark); margin-bottom:12px; font-family:'DM Serif Display',serif; }
+    .card-body p{ line-height:1.8; font-size:15px; }
+
+    /* ─── EMPLOYER CARDS ─── */
+    .employer-card{
+      background:white;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 8px 25px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+    .employer-card:hover{ transform:translateY(-6px); box-shadow:0 16px 40px rgba(0,0,0,0.14); }
+    .employer-img{
+      width:100%;
+      height:180px;
+      object-fit:cover;
+      display:block;
+    }
+    .employer-body{ padding:22px 25px; }
+    .employer-body h3{ font-size:22px; color:var(--dark); margin-bottom:6px; font-family:'DM Serif Display',serif; }
+    .employer-tag{
+      display:inline-block;
+      background:rgba(201,162,39,0.12);
+      color:var(--gold);
+      font-size:13px;
+      font-weight:700;
+      padding:4px 12px;
+      border-radius:50px;
+      margin-top:4px;
+    }
+
+    /* ─── ABOUT SPLIT ─── */
+    .split{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:60px;
+      align-items:center;
+    }
+    .split-img{
+      width:100%;
+      border-radius:20px;
+      object-fit:cover;
+      height:420px;
+      box-shadow:0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    /* ─── APPLY ─── */
+    #apply{ background:var(--dark); color:white; }
+    #apply .section-title{ color:white; }
+    #apply .section-desc{ color:#ccc; }
+
+    form{
+      background:rgba(255,255,255,0.08);
+      padding:35px;
+      border-radius:20px;
+      max-width:700px;
+      margin:auto;
+    }
+    .form-group{ margin-bottom:20px; }
+    input,textarea{
+      width:100%;
+      padding:15px;
+      border:none;
+      border-radius:10px;
+      outline:none;
+      font-size:16px;
+    }
+    textarea{ min-height:130px; resize:vertical; }
+    button{
+      width:100%;
+      background:var(--gold);
+      border:none;
+      padding:16px;
+      border-radius:10px;
+      color:white;
+      font-size:18px;
+      font-weight:800;
+      cursor:pointer;
+      transition:0.3s;
+    }
+    button:hover{ background:var(--goldlight); }
+
+    footer{ background:#020617; color:#aaa; text-align:center; padding:30px 20px; }
+
+    /* ─── RESPONSIVE ─── */
+    @media(max-width:768px){
+      h1{ font-size:48px; }
+      .section-title{ font-size:38px; }
+      nav{ display:none; }
+      .split{ grid-template-columns:1fr; }
+      .split-img{ height:280px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ─── HEADER ─── -->
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">Site<span>4</span>People</a>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Districts</a>
+      <a href="#apply">Apply</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ─── HERO ─── -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="badge">Trusted by 10,000+ Job Seekers</div>
+    <h1>Jobs in <em>Sabarkantha</em></h1>
+    <p>Your Gateway to Careers in Sabarkantha, Gujarat — Discover opportunities across every sector in North Gujarat's growing district.</p>
+    <div class="btns">
+      <a href="#apply" class="btn btn-primary">Apply Now</a>
+      <a href="#market" class="btn btn-outline">Explore Sectors</a>
+    </div>
+    <div class="stats">
+      <div class="stat">
+        <div class="num">650+</div>
+        <div class="label">Active Vacancies</div>
+      </div>
+      <div class="stat">
+        <div class="num">95+</div>
+        <div class="label">Companies Hiring</div>
+      </div>
+      <div class="stat">
+        <div class="num">15</div>
+        <div class="label">Industry Sectors</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── HERITAGE & ECONOMY ─── -->
+<section>
+  <div class="container">
+
+    <div class="section-label">Heritage & Economy</div>
+    <h2 class="section-title">The Work History of Sabarkantha</h2>
+    <p class="section-desc">Sabarkantha has historically been known for agriculture, dairy farming, handicrafts, and local trade. Today it is rapidly growing with industries, healthcare, education, and digital opportunities.</p>
+
+    <!-- Split layout: text left, scenic image right -->
+    <div class="split" style="margin-bottom:60px;">
+      <div>
+        <p style="font-size:17px;line-height:2;color:var(--text);">
+          Nestled in North Gujarat, Sabarkantha district stretches from the fertile plains to the Aravalli foothills. 
+          Its economy has evolved from traditional agriculture and milk cooperatives to a vibrant industrial and services sector, 
+          making it one of Gujarat's most dynamic districts for career growth.
+        </p>
+      </div>
+      <img
+        class="split-img"
+        src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=2070&auto=format&fit=crop"
+        alt="Green Gujarat farmland landscape"
+        loading="lazy"
+      />
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img
+          class="card-img"
+          src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=2070&auto=format&fit=crop"
+          alt="Agriculture and dairy farming"
+          loading="lazy"
+        />
+        <div class="card-body">
+          <h3>Agriculture & Dairy</h3>
+          <p>Sabarkantha has been one of Gujarat's strongest agricultural and dairy regions with thousands employed in farming, milk production, and food processing.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-img"
+          src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?q=80&w=2070&auto=format&fit=crop"
+          alt="Industrial manufacturing plant"
+          loading="lazy"
+        />
+        <div class="card-body">
+          <h3>Industrial Growth</h3>
+          <p>Manufacturing units, ceramics, textiles, and engineering industries have expanded employment opportunities across the district.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-img"
+          src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop"
+          alt="Young professionals working on laptops"
+          loading="lazy"
+        />
+        <div class="card-body">
+          <h3>Digital Economy</h3>
+          <p>Modern youth are increasingly working in IT services, BPO, digital marketing, and remote work opportunities.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── JOB MARKET 2025 ─── -->
+<section id="market" style="background:#f1f5f9;">
+  <div class="container">
+    <div class="section-label">Job Market 2025</div>
+    <h2 class="section-title">Current Job Landscape in Sabarkantha</h2>
+    <p class="section-desc">Explore the fastest growing industries currently hiring in Sabarkantha district.</p>
+
+    <div class="cards">
+      <div class="card">
+        <img
+          class="card-img"
+          src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?q=80&w=2070&auto=format&fit=crop"
+          alt="Healthcare hospital staff"
+          loading="lazy"
+        />
+        <div class="card-body">
+          <h3>Healthcare</h3>
+          <p>Hospitals and healthcare centers are actively hiring nurses, pharmacists, technicians, and medical staff.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-img"
+          src="https://images.unsplash.com/photo-1601598851547-4302969d0614?q=80&w=2070&auto=format&fit=crop"
+          alt="Retail supermarket store"
+          loading="lazy"
+        />
+        <div class="card-body">
+          <h3>Retail & FMCG</h3>
+          <p>Supermarkets, retail stores, and FMCG distributors continue to expand across the district.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-img"
+          src="https://images.unsplash.com/photo-1542744094-24638eff58bb?q=80&w=2071&auto=format&fit=crop"
+          alt="Bank and finance office"
+          loading="lazy"
+        />
+        <div class="card-body">
+          <h3>Banking & Finance</h3>
+          <p>Private banks and finance companies are offering opportunities for executives and customer support staff.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TOP EMPLOYERS ─── -->
+<section>
+  <div class="container">
+    <div class="section-label">Top Employers</div>
+    <h2 class="section-title">Companies Hiring in Sabarkantha</h2>
+    <p class="section-desc">Leading organisations actively recruiting talent across Sabarkantha and North Gujarat.</p>
+
+    <div class="cards">
+      <div class="employer-card">
+        <img
+          class="employer-img"
+          src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?q=80&w=2069&auto=format&fit=crop"
+          alt="Amul dairy milk products"
+          loading="lazy"
+        />
+        <div class="employer-body">
+          <h3>Amul Dairy</h3>
+          <span class="employer-tag">Dairy & Food Processing</span>
+        </div>
+      </div>
+
+      <div class="employer-card">
+        <img
+          class="employer-img"
+          src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=2070&auto=format&fit=crop"
+          alt="Reliance Retail store"
+          loading="lazy"
+        />
+        <div class="employer-body">
+          <h3>Reliance Retail</h3>
+          <span class="employer-tag">Retail & Consumer Services</span>
+        </div>
+      </div>
+
+      <div class="employer-card">
+        <img
+          class="employer-img"
+          src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?q=80&w=2071&auto=format&fit=crop"
+          alt="Bank branch interior"
+          loading="lazy"
+        />
+        <div class="employer-body">
+          <h3>HDFC Bank</h3>
+          <span class="employer-tag">Banking & Financial Services</span>
+        </div>
+      </div>
+
+      <div class="employer-card">
+        <img
+          class="employer-img"
+          src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2070&auto=format&fit=crop"
+          alt="Pharmaceutical healthcare lab"
+          loading="lazy"
+        />
+        <div class="employer-body">
+          <h3>Zydus Healthcare</h3>
+          <span class="employer-tag">Healthcare & Pharmaceuticals</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── APPLY ─── -->
+<section id="apply">
+  <div class="container">
+    <div class="section-label">Apply Now</div>
+    <h2 class="section-title">Send Us Your Profile</h2>
+    <p class="section-desc">Fill in your details below and we'll connect you with relevant opportunities in Sabarkantha.</p>
+
+    <form id="jobForm">
+      <div class="form-group">
+        <input type="text" placeholder="Full Name" required>
+      </div>
+      <div class="form-group">
+        <input type="tel" placeholder="Mobile Number" required>
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Email Address" required>
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Tell us about yourself"></textarea>
+      </div>
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  © 2025 Site4People | Sabarkantha Jobs Portal
+</footer>
+
+<script>
+document.getElementById('jobForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  alert('Application Submitted Successfully!');
+  this.reset();
+});
+</script>
+
+</body>
+</html>

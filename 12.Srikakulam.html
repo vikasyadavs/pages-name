@@ -1,0 +1,1835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site4People - Your gateway to jobs and careers in Srikakulam, Andhra Pradesh. Explore 2500+ vacancies with 850+ companies">
+    <meta name="keywords" content="jobs Srikakulam, careers Andhra Pradesh, employment portal, recruitment">
+    <meta name="author" content="Site4People">
+    <meta property="og:title" content="Site4People - Jobs & Vacancies in Srikakulam">
+    <meta property="og:description" content="Trusted by 10,000+ job seekers. Find your perfect career in Srikakulam district.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Site4People - Jobs & Vacancies in Srikakulam">
+    <meta name="twitter:description" content="Your gateway to careers in Srikakulam, Andhra Pradesh">
+    <link rel="canonical" href="https://site4people.com">
+    
+    <title>Site4People - Jobs & Vacancies in Srikakulam, Andhra Pradesh</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --deep-ocean: #123458;
+            --coastal-teal: #1f5c70;
+            --golden-sand: #d9a35f;
+            --sunset-orange: #f08a4b;
+            --pearl-white: #f8f6f2;
+            --sea-mist: #dce7ea;
+            --dark-navy: #0f2233;
+            --accent-glow: rgba(217, 163, 95, 0.4);
+            --transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--deep-ocean);
+            background-color: var(--pearl-white);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.7);
+            border-bottom: 1px solid rgba(217, 163, 95, 0.2);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation: slideDown 0.6s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--deep-ocean);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--deep-ocean);
+            font-weight: 500;
+            font-size: 0.95rem;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--golden-sand), var(--sunset-orange));
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--deep-ocean);
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                background: rgba(248, 246, 242, 0.95);
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            nav {
+                padding: 1rem;
+            }
+        }
+
+        /* HERO SECTION */
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            margin-top: 60px;
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), 
+                        url('https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=1600&h=900&fit=crop') center/cover no-repeat,
+                        linear-gradient(135deg, #ff6b35 0%, #f08a4b 25%, #1f5c70 75%, #123458 100%);
+            background-attachment: fixed;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 100%, rgba(31, 92, 112, 0.4) 0%, rgba(15, 34, 51, 0.6) 100%);
+            opacity: 0.7;
+            z-index: 0;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                linear-gradient(180deg, rgba(15, 34, 51, 0.1) 0%, rgba(31, 92, 112, 0.3) 50%, rgba(15, 34, 51, 0.5) 100%);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            animation: fadeUpHero 1s ease both;
+        }
+
+        @keyframes fadeUpHero {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            color: var(--pearl-white);
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            letter-spacing: -1px;
+            line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: 1.3rem;
+            color: rgba(248, 246, 242, 0.9);
+            margin-bottom: 2rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(217, 163, 95, 0.2);
+            border: 1px solid var(--golden-sand);
+            padding: 0.7rem 1.5rem;
+            border-radius: 50px;
+            color: var(--golden-sand);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--golden-sand), var(--sunset-orange));
+            color: white;
+            box-shadow: 0 8px 25px rgba(240, 138, 75, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(240, 138, 75, 0.5);
+        }
+
+        .btn-secondary {
+            background: rgba(248, 246, 242, 0.15);
+            color: white;
+            border: 1px solid rgba(248, 246, 242, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(248, 246, 242, 0.25);
+            transform: translateY(-3px);
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 1.5rem;
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+            animation: fadeUp 0.8s ease both;
+        }
+
+        .stat-card:nth-child(2) { animation-delay: 0.1s; }
+        .stat-card:nth-child(3) { animation-delay: 0.2s; }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--golden-sand);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: rgba(248, 246, 242, 0.8);
+            margin-top: 0.5rem;
+        }
+
+        /* WORK HISTORY SECTION */
+        .section {
+            padding: 5rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            color: var(--deep-ocean);
+            margin-bottom: 3rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--golden-sand), var(--sunset-orange));
+            margin: 1rem auto 0;
+            border-radius: 2px;
+        }
+
+        .work-history {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .history-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(18, 52, 88, 0.1);
+            transition: var(--transition);
+            border-left: 5px solid var(--golden-sand);
+            animation: fadeUpCard 0.8s ease both;
+        }
+
+        .history-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(18, 52, 88, 0.2);
+        }
+
+        @keyframes fadeUpCard {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .history-card:nth-child(2) { animation-delay: 0.1s; }
+        .history-card:nth-child(3) { animation-delay: 0.2s; }
+        .history-card:nth-child(4) { animation-delay: 0.3s; }
+        .history-card:nth-child(5) { animation-delay: 0.4s; }
+        .history-card:nth-child(6) { animation-delay: 0.5s; }
+
+        .history-icon {
+            font-size: 3rem;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(217, 163, 95, 0.1), rgba(240, 138, 75, 0.1));
+        }
+
+        .history-content {
+            padding: 1.5rem;
+        }
+
+        .history-content h3 {
+            color: var(--deep-ocean);
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        .history-content p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        /* JOB HISTORY TIMELINE */
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--golden-sand), var(--sunset-orange));
+        }
+
+        .timeline-item {
+            margin-bottom: 3rem;
+            width: 48%;
+            animation: fadeUpCard 0.8s ease both;
+        }
+
+        .timeline-item:nth-child(odd) {
+            margin-left: 0;
+            margin-right: auto;
+            text-align: right;
+            padding-right: 4%;
+        }
+
+        .timeline-item:nth-child(even) {
+            margin-left: auto;
+            margin-right: 0;
+            padding-left: 4%;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 16px;
+            height: 16px;
+            background: var(--golden-sand);
+            border: 3px solid var(--pearl-white);
+            border-radius: 50%;
+            top: 10px;
+            box-shadow: 0 0 0 8px rgba(217, 163, 95, 0.1);
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(18, 52, 88, 0.08);
+            border-left: 3px solid var(--coastal-teal);
+            position: relative;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            border-left: none;
+            border-right: 3px solid var(--coastal-teal);
+        }
+
+        .timeline-year {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--golden-sand);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-text {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 0;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 50px !important;
+                padding-right: 0 !important;
+                text-align: left !important;
+                margin-right: 0 !important;
+            }
+
+            .timeline-dot {
+                left: 0;
+                transform: translateX(-50%);
+            }
+
+            .timeline-content {
+                border-left: 3px solid var(--coastal-teal) !important;
+                border-right: none !important;
+            }
+        }
+
+        /* JOB MARKET SECTION */
+        .job-market {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .market-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 8px 25px rgba(18, 52, 88, 0.1);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            animation: fadeUpCard 0.8s ease both;
+        }
+
+        .market-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(18, 52, 88, 0.15);
+        }
+
+        .market-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--golden-sand), var(--sunset-orange));
+        }
+
+        .market-card:nth-child(1)::before { background: linear-gradient(90deg, #FF6B6B, #FF8E72); }
+        .market-card:nth-child(2)::before { background: linear-gradient(90deg, #4ECDC4, #44A08D); }
+        .market-card:nth-child(3)::before { background: linear-gradient(90deg, #FFE66D, #FF9a76); }
+        .market-card:nth-child(4)::before { background: linear-gradient(90deg, #95E1D3, #38A3A5); }
+        .market-card:nth-child(5)::before { background: linear-gradient(90deg, #F38181, #FFA154); }
+        .market-card:nth-child(6)::before { background: linear-gradient(90deg, #AA96DA, #FCBAD3); }
+        .market-card:nth-child(7)::before { background: linear-gradient(90deg, #A8EDEA, #fed6e3); }
+        .market-card:nth-child(8)::before { background: linear-gradient(90deg, #FF9A56, #FF6A88); }
+
+        .market-card:nth-child(2) { animation-delay: 0.1s; }
+        .market-card:nth-child(3) { animation-delay: 0.2s; }
+        .market-card:nth-child(4) { animation-delay: 0.3s; }
+        .market-card:nth-child(5) { animation-delay: 0.4s; }
+        .market-card:nth-child(6) { animation-delay: 0.5s; }
+        .market-card:nth-child(7) { animation-delay: 0.6s; }
+        .market-card:nth-child(8) { animation-delay: 0.7s; }
+
+        .market-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .market-card h3 {
+            color: var(--deep-ocean);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .market-growth {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .growth-percentage {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--golden-sand);
+        }
+
+        .growth-trend {
+            color: #4ECDC4;
+            font-weight: 600;
+        }
+
+        .progress-bar {
+            height: 6px;
+            background: #f0f0f0;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--golden-sand), var(--sunset-orange));
+            border-radius: 3px;
+            animation: fillProgress 1s ease both;
+        }
+
+        @keyframes fillProgress {
+            from {
+                width: 0;
+            }
+            to {
+                width: var(--progress);
+            }
+        }
+
+        .market-description {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* COMPANIES SECTION */
+        .companies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .company-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(18, 52, 88, 0.1);
+            transition: var(--transition);
+            animation: fadeUpCard 0.8s ease both;
+            position: relative;
+        }
+
+        .company-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(18, 52, 88, 0.15);
+        }
+
+        .company-card:nth-child(2) { animation-delay: 0.1s; }
+        .company-card:nth-child(3) { animation-delay: 0.2s; }
+        .company-card:nth-child(4) { animation-delay: 0.3s; }
+        .company-card:nth-child(5) { animation-delay: 0.4s; }
+        .company-card:nth-child(6) { animation-delay: 0.5s; }
+
+        .company-header {
+            height: 150px;
+            background: linear-gradient(135deg, rgba(217, 163, 95, 0.1), rgba(240, 138, 75, 0.1));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+
+        .company-header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        /* Coastal Aquaculture Ltd - Fish Farming */
+        .company-card:nth-child(1) .company-header { 
+            background-image: url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop');
+            background-position: center;
+        }
+        
+        /* Green Harvest India - Agricultural Farmland */
+        .company-card:nth-child(2) .company-header { 
+            background-image: url('https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600&h=400&fit=crop');
+            background-position: center;
+        }
+        
+        /* Wellness Care Hospital - Healthcare Facility */
+        .company-card:nth-child(3) .company-header { 
+            background-image: url('https://images.unsplash.com/photo-1576091160550-112173fba955?w=600&h=400&fit=crop');
+            background-position: center;
+        }
+        
+        /* Knowledge Academy School - Educational Environment */
+        .company-card:nth-child(4) .company-header { 
+            background-image: url('https://images.unsplash.com/photo-1427504494785-cdec0f72fb4b?w=600&h=400&fit=crop');
+            background-position: center;
+        }
+        
+        /* Swift Logistics Co - Transport/Logistics Hub */
+        .company-card:nth-child(5) .company-header { 
+            background-image: url('https://images.unsplash.com/photo-1578092494525-e7cf7ef697dd?w=600&h=400&fit=crop');
+            background-position: center;
+        }
+        
+        /* Tech Forward Solutions - Modern Tech Office */
+        .company-card:nth-child(6) .company-header { 
+            background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop');
+            background-position: center;
+        }
+
+        .company-logo {
+            font-size: 3rem;
+            position: relative;
+            z-index: 2;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .company-content {
+            padding: 1.5rem;
+        }
+
+        .company-name {
+            font-size: 1.2rem;
+            color: var(--deep-ocean);
+            margin-bottom: 0.5rem;
+        }
+
+        .company-industry {
+            display: inline-block;
+            background: rgba(217, 163, 95, 0.1);
+            color: var(--golden-sand);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .company-hiring {
+            background: rgba(78, 205, 196, 0.1);
+            color: #4ECDC4;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-left: 0.5rem;
+        }
+
+        .company-description {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .company-link {
+            color: var(--golden-sand);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .company-link:hover {
+            color: var(--sunset-orange);
+        }
+
+        /* APPLICATION FORM */
+        .form-section {
+            background: linear-gradient(135deg, rgba(31, 92, 112, 0.05), rgba(217, 163, 95, 0.05));
+            padding: 4rem 2rem;
+            border-radius: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-title {
+            font-size: 2.2rem;
+            color: var(--deep-ocean);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+            animation: fadeUp 0.6s ease both;
+        }
+
+        .form-group:nth-child(2) { animation-delay: 0.1s; }
+        .form-group:nth-child(3) { animation-delay: 0.2s; }
+        .form-group:nth-child(4) { animation-delay: 0.3s; }
+        .form-group:nth-child(5) { animation-delay: 0.4s; }
+        .form-group:nth-child(6) { animation-delay: 0.5s; }
+        .form-group:nth-child(7) { animation-delay: 0.6s; }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--deep-ocean);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 0.9rem 1rem;
+            border: 2px solid rgba(18, 52, 88, 0.1);
+            border-radius: 10px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+            background: white;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--golden-sand);
+            box-shadow: 0 0 0 3px rgba(217, 163, 95, 0.1);
+            background: white;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 1.1rem;
+            background: linear-gradient(135deg, var(--golden-sand), var(--sunset-orange));
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            font-family: 'DM Sans', sans-serif;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 8px 25px rgba(240, 138, 75, 0.3);
+            margin-top: 1rem;
+        }
+
+        .form-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(240, 138, 75, 0.5);
+        }
+
+        .form-submit:active {
+            transform: translateY(-1px);
+        }
+
+        .success-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(18, 52, 88, 0.3);
+            z-index: 1000;
+            animation: popUp 0.5s ease both;
+            display: none;
+        }
+
+        @keyframes popUp {
+            from {
+                opacity: 0;
+                transform: translate(-50%, -60%);
+                scale: 0.8;
+            }
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+                scale: 1;
+            }
+        }
+
+        .success-popup.show {
+            display: block;
+        }
+
+        .success-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .success-popup h3 {
+            color: var(--deep-ocean);
+            margin-bottom: 0.5rem;
+        }
+
+        .success-popup p {
+            color: #666;
+        }
+
+        .form-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 999;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+
+        .form-overlay.show {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        /* TESTIMONIALS */
+        .testimonials-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(18, 52, 88, 0.1);
+            transition: var(--transition);
+            border-top: 4px solid var(--golden-sand);
+            animation: fadeUpCard 0.8s ease both;
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(18, 52, 88, 0.15);
+        }
+
+        .testimonial-card:nth-child(2) { animation-delay: 0.1s; }
+        .testimonial-card:nth-child(3) { animation-delay: 0.2s; }
+
+        .testimonial-card::before {
+            content: '"';
+            font-size: 4rem;
+            color: rgba(217, 163, 95, 0.2);
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            font-family: Georgia, serif;
+        }
+
+        .testimonial-text {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--deep-ocean);
+            margin-bottom: 0.3rem;
+        }
+
+        .testimonial-role {
+            color: var(--golden-sand);
+            font-size: 0.85rem;
+        }
+
+        .stars {
+            color: #FFD700;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        /* FOOTER */
+        footer {
+            background: linear-gradient(135deg, var(--dark-navy) 0%, var(--deep-ocean) 100%);
+            color: white;
+            padding: 3rem 2rem 1rem;
+            position: relative;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--golden-sand), var(--sunset-orange));
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.7rem;
+        }
+
+        .footer-section a {
+            color: rgba(248, 246, 242, 0.7);
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--golden-sand);
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 0.8rem;
+            border: 1px solid rgba(248, 246, 242, 0.2);
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .newsletter-form input::placeholder {
+            color: rgba(248, 246, 242, 0.5);
+        }
+
+        .newsletter-form button {
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(135deg, var(--golden-sand), var(--sunset-orange));
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .newsletter-form button:hover {
+            transform: translateY(-2px);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(248, 246, 242, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .social-icons a:hover {
+            background: var(--golden-sand);
+            border-color: var(--golden-sand);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(248, 246, 242, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(248, 246, 242, 0.6);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1rem;
+            }
+
+            .section {
+                padding: 3rem 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .timeline::before {
+                left: 0;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 50px !important;
+                padding-right: 0 !important;
+                text-align: left !important;
+            }
+
+            .timeline-dot {
+                left: 0;
+            }
+
+            .work-history, .job-market, .companies-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Scroll animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: var(--transition);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* JSON-LD Schema */
+        script[type="application/ld+json"] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- JSON-LD Schemas -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Site4People",
+        "url": "https://site4people.com",
+        "logo": "https://site4people.com/logo.png",
+        "description": "Regional job and career portal for Srikakulam district, Andhra Pradesh",
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Andhra Pradesh",
+            "addressCountry": "IN"
+        },
+        "sameAs": [
+            "https://facebook.com/site4people",
+            "https://twitter.com/site4people",
+            "https://linkedin.com/company/site4people"
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "JobPosting",
+        "title": "Jobs in Srikakulam",
+        "description": "Explore job opportunities in Srikakulam district",
+        "hiringOrganization": {
+            "@type": "Organization",
+            "name": "Site4People",
+            "sameAs": "https://site4people.com"
+        },
+        "jobLocation": {
+            "@type": "Place",
+            "address": {
+                "@type": "PostalAddress",
+                "addressRegion": "Srikakulam",
+                "addressCountry": "IN"
+            }
+        },
+        "baseSalary": {
+            "@type": "PriceSpecification",
+            "currency": "INR"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://site4people.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Jobs",
+                "item": "https://site4people.com/jobs"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Companies",
+                "item": "https://site4people.com/companies"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo">Site4People</a>
+        <ul class="nav-links">
+            <li><a href="#work-history">Work History</a></li>
+            <li><a href="#job-history">Job History</a></li>
+            <li><a href="#job-market">Job Market</a></li>
+            <li><a href="#companies">Companies</a></li>
+            <li><a href="#apply">Apply Now</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="badge">🌟 Trusted by 10,000+ Job Seekers</div>
+            <h1>Jobs & Vacancies in Srikakulam</h1>
+            <p class="subtitle">Your Gateway to Careers in Srikakulam, Andhra Pradesh</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('apply').scrollIntoView({behavior: 'smooth'})">Explore Opportunities</button>
+                <button class="btn btn-secondary" onclick="document.getElementById('apply').scrollIntoView({behavior: 'smooth'})">Apply Now</button>
+            </div>
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number">12K+</div>
+                    <div class="stat-label">Active Applicants</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">850+</div>
+                    <div class="stat-label">Companies</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2,500+</div>
+                    <div class="stat-label">Vacancies</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work History Section -->
+    <section id="work-history" class="section">
+        <h2 class="section-title">Economy & Work History</h2>
+        <div class="work-history">
+            <div class="history-card">
+                <div class="history-icon">🌾</div>
+                <div class="history-content">
+                    <h3>Agriculture</h3>
+                    <p>Srikakulam's agricultural economy is built on rice paddies, jute cultivation, and spice farming. Generations have thrived in farming.</p>
+                </div>
+            </div>
+            <div class="history-card">
+                <div class="history-icon">🎣</div>
+                <div class="history-content">
+                    <h3>Fishing & Aquaculture</h3>
+                    <p>Coastal fishing harbors have been economic lifelines. Shrimp farming and fish exports drive the maritime economy forward.</p>
+                </div>
+            </div>
+            <div class="history-card">
+                <div class="history-icon">🧵</div>
+                <div class="history-content">
+                    <h3>Handloom & Textiles</h3>
+                    <p>Traditional handloom weaving is deeply rooted in Srikakulam's heritage. Textile crafts continue to employ artisans across the district.</p>
+                </div>
+            </div>
+            <div class="history-card">
+                <div class="history-icon">🚢</div>
+                <div class="history-content">
+                    <h3>Coastal Commerce</h3>
+                    <p>The Bay of Bengal ports have facilitated trade for centuries. Shipping and logistics remain vital economic sectors.</p>
+                </div>
+            </div>
+            <div class="history-card">
+                <div class="history-icon">🏺</div>
+                <div class="history-content">
+                    <h3>Rural Craftsmanship</h3>
+                    <p>Traditional pottery, brass work, and artisan crafts represent the cultural and economic foundation of rural communities.</p>
+                </div>
+            </div>
+            <div class="history-card">
+                <div class="history-icon">🛍️</div>
+                <div class="history-content">
+                    <h3>Traditional Trade</h3>
+                    <p>Markets and bazaars have been centers of commerce. Trading families have built sustainable livelihoods across generations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job History Timeline -->
+    <section id="job-history" class="section">
+        <h2 class="section-title">Employment Evolution</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">Pre-1947</div>
+                    <div class="timeline-text">Agricultural economy dominated by peasant farming, fishing, and traditional handcraft industries serving local markets and coastal trade routes.</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">1950-1980</div>
+                    <div class="timeline-text">Post-independence growth in government sector employment. Schools, hospitals, and administrative offices expanded across the district.</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">1980-2000</div>
+                    <div class="timeline-text">Private sector emergence. Manufacturing units, agriculture processing industries, and retail trade flourished. Educational institutions multiplied.</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">2000-2015</div>
+                    <div class="timeline-text">IT & Digital services began entering coastal towns. Healthcare expanded significantly. Logistics and transportation sector growth accelerated.</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">2015-Present</div>
+                    <div class="timeline-text">Digital transformation, startup ecosystem emergence, and skilled service sector expansion. Agriculture remains foundational while new sectors flourish alongside traditional industries.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Market Section -->
+    <section id="job-market" class="section">
+        <h2 class="section-title">Current Job Market</h2>
+        <div class="job-market">
+            <div class="market-card">
+                <div class="market-icon">🎣</div>
+                <h3>Fisheries</h3>
+                <div class="market-growth">
+                    <span class="growth-percentage">+18%</span>
+                    <span class="growth-trend">Expanding</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="--progress: 85%;"></div>
+                </div>
+                <p class="market-description">Aquaculture and fish export industries showing strong growth with modern processing facilities.</p>
+            </div>
+
+            <div class="market-card">
+                <div class="market-icon">🌾</div>
+                <h3>Agriculture</h3>
+                <div class="market-growth">
+                    <span class="growth-percentage">+12%</span>
+                    <span class="growth-trend">Stable</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="--progress: 78%;"></div>
+                </div>
+                <p class="market-description">Mechanization and export-focused farming creating new employment opportunities across rural areas.</p>
+            </div>
+
+            <div class="market-card">
+                <div class="market-icon">⚕️</div>
+                <h3>Healthcare</h3>
+                <div class="market-growth">
+                    <span class="growth-percentage">+25%</span>
+                    <span class="growth-trend">Booming</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="--progress: 82%;"></div>
+                </div>
+                <p class="market-description">Hospital networks and diagnostic centers expanding. Nursing and paramedical staff highly in demand.</p>
+            </div>
+
+            <div class="market-card">
+                <div class="market-icon">🎓</div>
+                <h3>Education</h3>
+                <div class="market-growth">
+                    <span class="growth-percentage">+15%</span>
+                    <span class="growth-trend">Growing</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="--progress: 75%;"></div>
+                </div>
+                <p class="market-description">Schools and training institutes multiplying. Demand for qualified educators and academic professionals rising.</p>
+            </div>
+
+            <div class="market-card">
+                <div class="market-icon">🛒</div>
+                <h3>Retail</h3>
+                <div class="market-growth">
+                    <span class="growth-percentage">+22%</span>
+                    <span class="growth-trend">Surging</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="--progress: 72%;"></div>
+                </div>
+                <p class="market-description">Modern retail chains and e-commerce warehouses creating retail and logistics support roles.</p>
+            </div>
+
+            <div class="market-card">
+                <div class="market-icon">🚚</div>
+                <h3>Logistics</h3>
+                <div class="market-growth">
+                    <span class="growth-percentage">+28%</span>
+                    <span class="growth-trend">Surging</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="--progress: 88%;"></div>
+                </div>
+                <p class="market-description">Port operations and supply chain management sector booming. Drivers and warehouse staff needed.</p>
+            </div>
+
+            <div class="market-card">
+                <div class="market-icon">🏭</div>
+                <h3>Manufacturing</h3>
+                <div class="market-growth">
+                    <span class="growth-percentage">+16%</span>
+                    <span class="growth-trend">Growing</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="--progress: 70%;"></div>
+                </div>
+                <p class="market-description">Food processing, textile mills, and precision engineering industries creating skilled manufacturing jobs.</p>
+            </div>
+
+            <div class="market-card">
+                <div class="market-icon">💻</div>
+                <h3>IT & Digital</h3>
+                <div class="market-growth">
+                    <span class="growth-percentage">+35%</span>
+                    <span class="growth-trend">Explosive</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="--progress: 65%;"></div>
+                </div>
+                <p class="market-description">Emerging tech startups and digital service centers creating new opportunities for software and tech professionals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Companies Section -->
+    <section id="companies" class="section">
+        <h2 class="section-title">Top Employers</h2>
+        <div class="companies-grid">
+            <div class="company-card">
+                <div class="company-header">🐟</div>
+                <div class="company-content">
+                    <div class="company-name">Coastal Aquaculture Ltd</div>
+                    <div class="company-industry">Fisheries</div>
+                    <div class="company-hiring">🔴 Actively Hiring</div>
+                    <p class="company-description">Leading shrimp and fish farming company with sustainable practices and export operations.</p>
+                    <a href="#" class="company-link">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="company-card">
+                <div class="company-header">🌾</div>
+                <div class="company-content">
+                    <div class="company-name">Green Harvest India</div>
+                    <div class="company-industry">Agriculture</div>
+                    <div class="company-hiring">🔴 Actively Hiring</div>
+                    <p class="company-description">Agricultural cooperative promoting sustainable farming and export of specialty crops.</p>
+                    <a href="#" class="company-link">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="company-card">
+                <div class="company-header">⚕️</div>
+                <div class="company-content">
+                    <div class="company-name">Wellness Care Hospital</div>
+                    <div class="company-industry">Healthcare</div>
+                    <div class="company-hiring">🔴 Actively Hiring</div>
+                    <p class="company-description">Modern multispecialty hospital providing quality healthcare and training opportunities for medical professionals.</p>
+                    <a href="#" class="company-link">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="company-card">
+                <div class="company-header">📚</div>
+                <div class="company-content">
+                    <div class="company-name">Knowledge Academy School</div>
+                    <div class="company-industry">Education</div>
+                    <div class="company-hiring">🔴 Actively Hiring</div>
+                    <p class="company-description">Premier educational institution offering quality education and recruitment for experienced teachers.</p>
+                    <a href="#" class="company-link">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="company-card">
+                <div class="company-header">📦</div>
+                <div class="company-content">
+                    <div class="company-name">Swift Logistics Co</div>
+                    <div class="company-industry">Logistics</div>
+                    <div class="company-hiring">🔴 Actively Hiring</div>
+                    <p class="company-description">Major transport and warehousing company connected to port operations and supply chain management.</p>
+                    <a href="#" class="company-link">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="company-card">
+                <div class="company-header">🏢</div>
+                <div class="company-content">
+                    <div class="company-name">Tech Forward Solutions</div>
+                    <div class="company-industry">IT & Digital</div>
+                    <div class="company-hiring">🔴 Actively Hiring</div>
+                    <p class="company-description">Fast-growing software and digital service company providing employment for developers and tech talent.</p>
+                    <a href="#" class="company-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form Section -->
+    <section id="apply" class="section">
+        <div class="form-section">
+            <h2 class="form-title">Apply Now — Send Us Your Profile</h2>
+            <form id="applicationForm" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">Mobile Number (+91) *</label>
+                    <input type="tel" id="mobile" name="mobile" placeholder="+91 XXXXXXXXXX" pattern="[0-9]{10}" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="about">Tell Us About Yourself *</label>
+                    <textarea id="about" name="about" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="careerInterest">Career Interest *</label>
+                    <select id="careerInterest" name="careerInterest" required>
+                        <option value="">Select a field of interest</option>
+                        <option value="fisheries">Fisheries & Aquaculture</option>
+                        <option value="agriculture">Agriculture</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="education">Education</option>
+                        <option value="retail">Retail</option>
+                        <option value="logistics">Logistics</option>
+                        <option value="manufacturing">Manufacturing</option>
+                        <option value="it">IT & Digital Services</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="resume">Resume/CV (Optional)</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+                </div>
+
+                <button type="submit" class="form-submit">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section">
+        <h2 class="section-title">Success Stories</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"Site4People helped me find my dream job in healthcare. The application process was smooth and the companies were genuinely interested. Highly recommended!"</p>
+                <div class="testimonial-author">Priya Devi</div>
+                <div class="testimonial-role">Nurse, Wellness Care Hospital</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"As a fresh graduate, I was nervous about job hunting. Site4People connected me with companies looking for talented individuals. Great platform!"</p>
+                <div class="testimonial-author">Rajesh Kumar</div>
+                <div class="testimonial-role">Software Developer, Tech Forward Solutions</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"I found skilled workers through Site4People for my farm operations. The quality of candidates is excellent and the process is transparent."</p>
+                <div class="testimonial-author">Suresh Rao</div>
+                <div class="testimonial-role">Agriculture Entrepreneur, Green Harvest</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Site4People</h4>
+                <p style="color: rgba(248, 246, 242, 0.7); margin-bottom: 1rem;">Your trusted partner in finding meaningful careers in Srikakulam, Andhra Pradesh.</p>
+                <div class="social-icons">
+                    <a href="#">f</a>
+                    <a href="#">𝕏</a>
+                    <a href="#">in</a>
+                    <a href="#">📷</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#work-history">Work History</a></li>
+                    <li><a href="#job-history">Job History</a></li>
+                    <li><a href="#job-market">Job Market</a></li>
+                    <li><a href="#companies">Companies</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Career Tips</a></li>
+                    <li><a href="#">Resume Guide</a></li>
+                    <li><a href="#">Job Alerts</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p style="color: rgba(248, 246, 242, 0.7); margin-bottom: 1rem; font-size: 0.9rem;">Get job updates delivered to your inbox.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Site4People. All rights reserved. | <a href="#" style="color: var(--golden-sand);">Privacy Policy</a> | <a href="#" style="color: var(--golden-sand);">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <!-- Success Popup -->
+    <div class="form-overlay" id="formOverlay"></div>
+    <div class="success-popup" id="successPopup">
+        <div class="success-icon">🎉</div>
+        <h3>We'll Be In Touch Soon!</h3>
+        <p>Thank you for your application. Our team will review your profile and contact you shortly.</p>
+    </div>
+
+    <script>
+        // Hamburger Menu
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Form Validation and Submission
+        function handleFormSubmit(event) {
+            event.preventDefault();
+
+            const fullName = document.getElementById('fullName').value.trim();
+            const mobile = document.getElementById('mobile').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const about = document.getElementById('about').value.trim();
+            const careerInterest = document.getElementById('careerInterest').value;
+
+            // Validate email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address');
+                return;
+            }
+
+            // Validate mobile
+            if (!/^\d{10}$/.test(mobile)) {
+                alert('Please enter a valid 10-digit mobile number');
+                return;
+            }
+
+            // Show success popup
+            showSuccessPopup();
+
+            // Reset form
+            document.getElementById('applicationForm').reset();
+        }
+
+        function showSuccessPopup() {
+            const overlay = document.getElementById('formOverlay');
+            const popup = document.getElementById('successPopup');
+
+            overlay.classList.add('show');
+            popup.classList.add('show');
+
+            setTimeout(() => {
+                overlay.classList.remove('show');
+                popup.classList.remove('show');
+            }, 3000);
+        }
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards and elements
+        document.querySelectorAll('.history-card, .market-card, .company-card, .testimonial-card').forEach(el => {
+            el.classList.add('reveal');
+            observer.observe(el);
+        });
+
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Animate stat counters
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 100;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current);
+                }
+            }, 20);
+        }
+
+        // Trigger counter animation on scroll
+        const statCards = document.querySelectorAll('.stat-card');
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const numberEl = entry.target.querySelector('.stat-number');
+                    const numberText = numberEl.textContent.replace(/\D/g, '');
+                    const target = parseInt(numberText);
+                    if (!entry.target.classList.contains('animated')) {
+                        animateCounter(numberEl, target);
+                        entry.target.classList.add('animated');
+                    }
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        statCards.forEach(card => statsObserver.observe(card));
+
+        // Google Analytics placeholder
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+
+        // Newsletter subscription
+        document.querySelector('.newsletter-form button').addEventListener('click', (e) => {
+            e.preventDefault();
+            const input = document.querySelector('.newsletter-form input');
+            if (input.value) {
+                alert('Thank you for subscribing!');
+                input.value = '';
+            }
+        });
+    </script>
+</body>
+</html>
