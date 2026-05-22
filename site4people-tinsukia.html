@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Site4People - Premium Jobs in Tinsukia, Assam | Job Portal</title>
+    <meta name="description" content="Discover premium job opportunities in Tinsukia, Assam. Site4People connects talented professionals with top employers. Browse vacancies, apply online, and advance your career.">
+    <meta name="keywords" content="jobs in Tinsukia, Assam jobs, employment Tinsukia, job portal, career opportunities, recruitment">
+    <meta name="author" content="Site4People">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Site4People - Premium Jobs in Tinsukia, Assam">
+    <meta property="og:description" content="Find your dream job in Tinsukia with Site4People - India's premier job portal">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Site4People+Jobs+Tinsukia">
+    <meta property="og:url" content="https://site4people-tinsukia.com">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Site4People - Jobs in Tinsukia, Assam">
+    <meta name="twitter:description" content="Premium job opportunities await you in Tinsukia">
+    <meta name="twitter:image" content="https://via.placeholder.com/1200x630?text=Site4People+Jobs">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://site4people-tinsukia.com">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Serif+Display:ital@0;1&family=Cinzel:wght@400;700&family=DM+Sans:wght@400;500;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="your_verification_code_here">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-navy: #001a4d;
+            --secondary-navy: #003d99;
+            --light-blue: #0066cc;
+            --accent-gold: #d4af37;
+            --light-gold: #e8c547;
+            --charcoal: #1a1a1a;
+            --off-white: #f8f7f3;
+            --bronze: #8b6f47;
+            --text-dark: #2c3e50;
+            --text-light: #ecf0f1;
+            --shadow-light: rgba(0, 26, 77, 0.1);
+            --shadow-medium: rgba(0, 26, 77, 0.2);
+            --shadow-dark: rgba(0, 26, 77, 0.3);
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--off-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* ============== NAVBAR ============== */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: linear-gradient(135deg, var(--primary-navy) 0%, var(--secondary-navy) 100%);
+            padding: 1.2rem 2rem;
+            box-shadow: 0 4px 15px var(--shadow-dark);
+            backdrop-filter: blur(10px);
+            animation: slideDownNav 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        @keyframes slideDownNav {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .navbar-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .logo:hover {
+            text-shadow: 0 0 20px var(--accent-gold);
+            transform: scale(1.05);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--off-white);
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: var(--accent-gold);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-gold);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .cta-btn {
+            background: linear-gradient(135deg, var(--accent-gold) 0%, var(--light-gold) 100%);
+            color: var(--primary-navy);
+            padding: 0.7rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
+        }
+
+        /* ============== HERO SECTION ============== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--primary-navy) 0%, var(--secondary-navy) 50%, #004d99 100%);
+            overflow: hidden;
+            padding: 4rem 2rem;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+            top: -200px;
+            right: -200px;
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(0, 102, 204, 0.2) 0%, transparent 70%);
+            bottom: -150px;
+            left: -150px;
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(30px);
+            }
+        }
+
+        .hero-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero-content {
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: var(--text-light);
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            letter-spacing: -1px;
+        }
+
+        .hero-subtitle {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.5rem;
+            color: var(--accent-gold);
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+            max-width: 500px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-gold) 0%, var(--light-gold) 100%);
+            color: var(--primary-navy);
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 12px 35px rgba(212, 175, 55, 0.5);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--accent-gold);
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 700;
+            border: 2px solid var(--accent-gold);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-secondary:hover {
+            background: var(--accent-gold);
+            color: var(--primary-navy);
+            transform: translateY(-5px);
+        }
+
+        .hero-image {
+            position: relative;
+            animation: fadeInRight 1s ease-out 0.4s both;
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 20px 50px var(--shadow-dark);
+            transition: transform 0.3s ease;
+        }
+
+        .hero-image img:hover {
+            transform: scale(1.02);
+        }
+
+        /* ============== STATS ============== */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .stat-item:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            display: block;
+        }
+
+        .stat-label {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+        }
+
+        /* ============== GENERAL SECTION STYLES ============== */
+        section {
+            padding: 6rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--primary-navy);
+            margin-bottom: 1rem;
+            text-align: center;
+            letter-spacing: -0.5px;
+        }
+
+        .section-subtitle {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.2rem;
+            color: var(--secondary-navy);
+            text-align: center;
+            margin-bottom: 3rem;
+            font-weight: 400;
+        }
+
+        /* ============== WORK HISTORY SECTION ============== */
+        .work-history {
+            background: linear-gradient(135deg, #f0f5ff 0%, #e8f0ff 100%);
+        }
+
+        .timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, var(--accent-gold) 0%, var(--secondary-navy) 100%);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            margin-bottom: 3rem;
+            width: 45%;
+            opacity: 0;
+            animation: fadeInFromLeft 0.8s ease-out forwards;
+        }
+
+        .timeline-item:nth-child(odd) {
+            margin-left: 0;
+            text-align: right;
+            animation: fadeInFromLeft 0.8s ease-out forwards;
+        }
+
+        .timeline-item:nth-child(even) {
+            margin-left: 55%;
+            text-align: left;
+            animation: fadeInFromRight 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeInFromLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInFromRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .timeline-item:nth-child(1) { animation-delay: 0.2s; }
+        .timeline-item:nth-child(2) { animation-delay: 0.4s; }
+        .timeline-item:nth-child(3) { animation-delay: 0.6s; }
+        .timeline-item:nth-child(4) { animation-delay: 0.8s; }
+
+        .timeline-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 8px 25px var(--shadow-light);
+            border-left: 4px solid var(--accent-gold);
+            transition: all 0.3s ease;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            border-left: none;
+            border-right: 4px solid var(--accent-gold);
+        }
+
+        .timeline-content:hover {
+            box-shadow: 0 12px 35px var(--shadow-medium);
+            transform: translateY(-5px);
+        }
+
+        .timeline-year {
+            font-family: 'Cinzel', serif;
+            font-size: 1.3rem;
+            color: var(--accent-gold);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-text {
+            color: var(--text-dark);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* ============== JOB HISTORY SECTION ============== */
+        .job-history {
+            background: white;
+        }
+
+        .job-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .job-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 8px 25px var(--shadow-light);
+            border-top: 4px solid var(--secondary-navy);
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .job-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-gold) 0%, var(--secondary-navy) 100%);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .job-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .job-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 40px var(--shadow-medium);
+        }
+
+        .job-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--primary-navy);
+            margin-bottom: 0.5rem;
+        }
+
+        .job-company {
+            color: var(--accent-gold);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .job-description {
+            color: var(--text-dark);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .job-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: var(--secondary-navy);
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--shadow-light);
+        }
+
+        /* ============== MARKET SECTION ============== */
+        .market {
+            background: linear-gradient(135deg, #f0f5ff 0%, #e8f0ff 100%);
+        }
+
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .market-card {
+            background: white;
+            padding: 2.5rem 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 8px 25px var(--shadow-light);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .market-card:hover {
+            border-color: var(--accent-gold);
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px var(--shadow-medium);
+        }
+
+        .market-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .market-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: var(--primary-navy);
+            margin-bottom: 0.8rem;
+        }
+
+        .market-stat {
+            font-size: 1.2rem;
+            color: var(--accent-gold);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .market-description {
+            color: var(--text-dark);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* ============== COMPANIES SECTION ============== */
+        .companies {
+            background: white;
+        }
+
+        .companies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .company-card {
+            background: linear-gradient(135deg, #f8f9ff 0%, #f0f5ff 100%);
+            padding: 2.5rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--secondary-navy);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .company-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .company-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px var(--shadow-medium);
+            border-left-color: var(--accent-gold);
+        }
+
+        .company-logo {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--secondary-navy) 0%, var(--light-blue) 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .company-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: var(--primary-navy);
+            margin-bottom: 0.5rem;
+        }
+
+        .company-sector {
+            color: var(--accent-gold);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .company-info {
+            color: var(--text-dark);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .company-jobs {
+            display: inline-block;
+            background: var(--secondary-navy);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        /* ============== FORM SECTION ============== */
+        .form-section {
+            background: linear-gradient(135deg, var(--primary-navy) 0%, var(--secondary-navy) 100%);
+            color: white;
+        }
+
+        .form-container {
+            max-width: 700px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 3rem;
+            border-radius: 15px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            backdrop-filter: blur(10px);
+            animation: fadeInScale 0.8s ease-out;
+        }
+
+        .form-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 1024px) {
+            .form-wrapper {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .form-wrapper img {
+                max-height: 300px;
+            }
+        }
+
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .form-group {
+            margin-bottom: 1.8rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.6rem;
+            color: var(--accent-gold);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-family: 'Nunito', sans-serif;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .error-message {
+            color: #ff6b6b;
+            font-size: 0.85rem;
+            margin-top: 0.4rem;
+            display: none;
+        }
+
+        .form-group.error input,
+        .form-group.error textarea {
+            border-color: #ff6b6b;
+        }
+
+        .form-group.error .error-message {
+            display: block;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 1.2rem;
+            background: linear-gradient(135deg, var(--accent-gold) 0%, var(--light-gold) 100%);
+            color: var(--primary-navy);
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+        }
+
+        .form-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(212, 175, 55, 0.5);
+        }
+
+        .form-submit:active {
+            transform: translateY(-1px);
+        }
+
+        .success-message {
+            display: none;
+            background: rgba(76, 175, 80, 0.2);
+            border: 2px solid #4caf50;
+            color: #c8e6c9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: 600;
+            animation: slideInDown 0.5s ease-out;
+        }
+
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .success-message.show {
+            display: block;
+        }
+
+        /* ============== FOOTER ============== */
+        footer {
+            background: linear-gradient(135deg, var(--charcoal) 0%, var(--primary-navy) 100%);
+            color: var(--off-white);
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent-gold);
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: rgba(248, 247, 243, 0.8);
+            font-size: 0.95rem;
+            line-height: 1.8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            font-size: 0.9rem;
+            color: rgba(248, 247, 243, 0.7);
+        }
+
+        /* ============== RESPONSIVE DESIGN ============== */
+        @media (max-width: 768px) {
+            .navbar-container {
+                flex-wrap: wrap;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-image img {
+                height: 300px;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline::before {
+                left: 0;
+            }
+
+            .timeline-item,
+            .timeline-item:nth-child(odd),
+            .timeline-item:nth-child(even) {
+                width: 100%;
+                margin-left: 0 !important;
+                text-align: left !important;
+                padding-left: 2rem;
+            }
+
+            .timeline-content {
+                border-left: 4px solid var(--accent-gold);
+                border-right: none;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .form-container {
+                padding: 2rem;
+            }
+
+            .job-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .companies-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .market-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar {
+                padding: 1rem;
+            }
+
+            .logo {
+                font-size: 1.4rem;
+            }
+
+            .nav-links {
+                gap: 0.5rem;
+                font-size: 0.8rem;
+            }
+
+            .hero {
+                min-height: auto;
+                padding: 3rem 1rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+                text-align: center;
+            }
+
+            section {
+                padding: 3rem 1rem;
+            }
+
+            .form-container {
+                padding: 1.5rem;
+            }
+        }
+
+        /* ============== SCROLL ANIMATIONS ============== */
+        .scroll-animate {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .scroll-animate.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<body>
+    <!-- ============== NAVBAR ============== -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="logo">Site4People</a>
+            <ul class="nav-links">
+                <li><a href="#work-history">Our Legacy</a></li>
+                <li><a href="#job-history">Jobs</a></li>
+                <li><a href="#market">Market</a></li>
+                <li><a href="#companies">Companies</a></li>
+                <li><button class="cta-btn" onclick="document.getElementById('form-section').scrollIntoView({behavior:'smooth'})">Apply Now</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ============== HERO SECTION ============== -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Your Dream Career<br>Starts Here</h1>
+                <p class="hero-subtitle">Opportunities in Tinsukia, Assam</p>
+                <p>Discover premium job opportunities across diverse industries in Tinsukia. Site4People connects talented professionals with leading employers, fostering growth and success in Assam's thriving job market.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="document.getElementById('form-section').scrollIntoView({behavior:'smooth'})">Get Started</button>
+                    <button class="btn-secondary" onclick="document.getElementById('job-history').scrollIntoView({behavior:'smooth'})">Browse Jobs</button>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number">2,500+</span>
+                        <span class="stat-label">Active Jobs</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">850+</span>
+                        <span class="stat-label">Top Companies</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">45K+</span>
+                        <span class="stat-label">Placements</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=500&fit=crop" alt="Professional workspace with team collaboration">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== WORK HISTORY SECTION ============== -->
+    <section class="work-history" id="work-history">
+        <h2 class="section-title">Work History of Tinsukia</h2>
+        <p class="section-subtitle">From Industrial Heritage to Modern Prosperity</p>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=250&fit=crop" alt="Oil refinery and industrial facilities" style="width: 100%; border-radius: 8px; margin-bottom: 1rem; height: 200px; object-fit: cover;">
+                    <div class="timeline-year">1960s</div>
+                    <div class="timeline-text">Oil Discovery & Industrial Growth - Tinsukia emerged as a major oil production hub with the establishment of the Assam Oil Company, transforming the region's economy.</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40d08ce784d7?w=400&h=250&fit=crop" alt="Manufacturing factory workers and equipment" style="width: 100%; border-radius: 8px; margin-bottom: 1rem; height: 200px; object-fit: cover;">
+                    <div class="timeline-year">1980s</div>
+                    <div class="timeline-text">Manufacturing Expansion - Development of petrochemical industries and manufacturing sectors, creating thousands of skilled jobs and fostering industrial development.</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=250&fit=crop" alt="Modern office building and infrastructure" style="width: 100%; border-radius: 8px; margin-bottom: 1rem; height: 200px; object-fit: cover;">
+                    <div class="timeline-year">2000s</div>
+                    <div class="timeline-text">Modernization Era - Infrastructure development, tech adoption, and service sector growth transformed Tinsukia into a diversified employment hub.</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=250&fit=crop" alt="Modern digital workplace and technology" style="width: 100%; border-radius: 8px; margin-bottom: 1rem; height: 200px; object-fit: cover;">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-text">Digital Revolution - Today, Tinsukia stands as a dynamic region with opportunities in tech, healthcare, education, and sustainable industries.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== JOB HISTORY SECTION ============== -->
+    <section class="job-history" id="job-history">
+        <h2 class="section-title">Job Market Evolution</h2>
+        <p class="section-subtitle">How Tinsukia's employment landscape has transformed</p>
+        
+        <div class="job-cards scroll-animate">
+            <div class="job-card">
+                <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=200&fit=crop" alt="Oil and gas industry workers" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <h3 class="job-title">Oil & Gas Sector</h3>
+                <p class="job-company">Energy Industry</p>
+                <p class="job-description">The backbone of Tinsukia's economy, offering roles in extraction, refining, engineering, and management. Skilled technicians and engineers are in high demand.</p>
+                <div class="job-meta">
+                    <span>📍 Tinsukia</span>
+                    <span>💼 1000+ Jobs</span>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <img src="https://images.unsplash.com/photo-1581092160562-40d08ce784d7?w=400&h=200&fit=crop" alt="Manufacturing and industrial workers" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <h3 class="job-title">Manufacturing & Logistics</h3>
+                <p class="job-company">Industrial Sector</p>
+                <p class="job-description">Growth in manufacturing plants and supply chain operations creates opportunities for operations managers, technicians, and logistics professionals.</p>
+                <div class="job-meta">
+                    <span>📍 Tinsukia</span>
+                    <span>💼 650+ Jobs</span>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=200&fit=crop" alt="IT professionals and software development" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <h3 class="job-title">IT & Digital Services</h3>
+                <p class="job-company">Technology Sector</p>
+                <p class="job-description">Emerging opportunities in software development, digital marketing, data analytics, and IT infrastructure. Remote-friendly positions available.</p>
+                <div class="job-meta">
+                    <span>📍 Tinsukia</span>
+                    <span>💼 450+ Jobs</span>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <img src="https://images.unsplash.com/photo-1576091160550-112173f31c77?w=400&h=200&fit=crop" alt="Healthcare professionals and doctors" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <h3 class="job-title">Healthcare & Education</h3>
+                <p class="job-company">Services Sector</p>
+                <p class="job-description">Expansion of hospitals, clinics, schools, and educational institutions creating roles for doctors, nurses, teachers, and administrators.</p>
+                <div class="job-meta">
+                    <span>📍 Tinsukia</span>
+                    <span>💼 380+ Jobs</span>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=200&fit=crop" alt="Retail store and shopping environment" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <h3 class="job-title">Retail & Commerce</h3>
+                <p class="job-company">Commercial Sector</p>
+                <p class="job-description">Growing retail chains and e-commerce hubs providing opportunities in sales, management, customer service, and business operations.</p>
+                <div class="job-meta">
+                    <span>📍 Tinsukia</span>
+                    <span>💼 520+ Jobs</span>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=200&fit=crop" alt="Hospitality and hotel service" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <h3 class="job-title">Hospitality & Tourism</h3>
+                <p class="job-company">Service Industry</p>
+                <p class="job-description">Development of hotels, restaurants, and tourism ventures offering career paths in hospitality management, culinary arts, and customer experience.</p>
+                <div class="job-meta">
+                    <span>📍 Tinsukia</span>
+                    <span>💼 280+ Jobs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== MARKET SECTION ============== -->
+    <section class="market" id="market">
+        <h2 class="section-title">Current Job Market in Tinsukia</h2>
+        <p class="section-subtitle">2024 Employment Insights & Opportunities</p>
+        
+        <div class="market-grid scroll-animate">
+            <div class="market-card">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=180&fit=crop" alt="Job growth statistics and market analysis" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <div class="market-icon">📈</div>
+                <h3 class="market-title">Job Growth</h3>
+                <div class="market-stat">+12.5%</div>
+                <p class="market-description">Year-on-year employment growth across all sectors, with emerging industries creating new opportunities.</p>
+            </div>
+
+            <div class="market-card">
+                <img src="https://images.unsplash.com/photo-1579621970563-430f63602022?w=400&h=180&fit=crop" alt="Salary and compensation growth" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <div class="market-icon">💰</div>
+                <h3 class="market-title">Average Salary</h3>
+                <div class="market-stat">₹4.2L - ₹8.5L</div>
+                <p class="market-description">Competitive remuneration across sectors, with IT and engineering commanding premium packages.</p>
+            </div>
+
+            <div class="market-card">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=180&fit=crop" alt="Technical skills and programming" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <div class="market-icon">🎯</div>
+                <h3 class="market-title">Top Demand Skills</h3>
+                <div class="market-stat">Data & Cloud</div>
+                <p class="market-description">Python, AWS, Azure, Data Analytics, Machine Learning, and Full-Stack Development most sought after.</p>
+            </div>
+
+            <div class="market-card">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=180&fit=crop" alt="Corporate buildings and offices" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <div class="market-icon">🏢</div>
+                <h3 class="market-title">Major Employers</h3>
+                <div class="market-stat">850+</div>
+                <p class="market-description">From multinational corporations to startups, diverse employers offer varied career pathways and growth opportunities.</p>
+            </div>
+
+            <div class="market-card">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=180&fit=crop" alt="Team collaboration and hiring" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <div class="market-icon">👥</div>
+                <h3 class="market-title">Hiring Rate</h3>
+                <div class="market-stat">8,200+ Monthly</div>
+                <p class="market-description">Active recruitment across all experience levels—fresher to experienced professionals always in demand.</p>
+            </div>
+
+            <div class="market-card">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=180&fit=crop" alt="Career growth and professional development" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <div class="market-icon">🌟</div>
+                <h3 class="market-title">Career Growth</h3>
+                <div class="market-stat">4-6 Years Average</div>
+                <p class="market-description">Time to reach mid-level management positions with continuous upskilling and development opportunities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== COMPANIES SECTION ============== -->
+    <section class="companies" id="companies">
+        <h2 class="section-title">Top Companies in Tinsukia</h2>
+        <p class="section-subtitle">Leading employers shaping the district's future</p>
+        
+        <div class="companies-grid scroll-animate">
+            <div class="company-card">
+                <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=180&fit=crop" alt="Assam Oil Company facilities" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <div class="company-logo">AOC</div>
+                <h3 class="company-name">Assam Oil Company</h3>
+                <p class="company-sector">Oil & Energy</p>
+                <p class="company-info">India's premier oil production company with extensive operations in Tinsukia, offering careers in exploration, production, and refining.</p>
+                <span class="company-jobs">250+ Openings</span>
+            </div>
+
+            <div class="company-card">
+                <img src="https://images.unsplash.com/photo-1581092160562-40d08ce784d7?w=400&h=180&fit=crop" alt="National Thermal power plant" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <div class="company-logo">NTL</div>
+                <h3 class="company-name">National Thermal Ltd.</h3>
+                <p class="company-sector">Power & Energy</p>
+                <p class="company-info">Major power generation company with state-of-the-art facilities, hiring engineers, technicians, and support staff.</p>
+                <span class="company-jobs">180+ Openings</span>
+            </div>
+
+            <div class="company-card">
+                <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=180&fit=crop" alt="Industrial manufacturing facility" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <div class="company-logo">TIC</div>
+                <h3 class="company-name">Tinsukia Industries Corp</h3>
+                <p class="company-sector">Manufacturing</p>
+                <p class="company-info">Leading manufacturing conglomerate producing chemicals and industrial products with consistent hiring.</p>
+                <span class="company-jobs">120+ Openings</span>
+            </div>
+
+            <div class="company-card">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=180&fit=crop" alt="Digital solutions and IT development" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <div class="company-logo">DFS</div>
+                <h3 class="company-name">Digital Future Solutions</h3>
+                <p class="company-sector">IT & Technology</p>
+                <p class="company-info">Innovative tech company offering software development, consulting, and IT services to global clients.</p>
+                <span class="company-jobs">95+ Openings</span>
+            </div>
+
+            <div class="company-card">
+                <img src="https://images.unsplash.com/photo-1576091160550-112173f31c77?w=400&h=180&fit=crop" alt="Medicare hospital and healthcare facility" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <div class="company-logo">MED</div>
+                <h3 class="company-name">Medicare Hospitals</h3>
+                <p class="company-sector">Healthcare</p>
+                <p class="company-info">Multi-specialty healthcare provider with excellent work culture, hiring doctors, nurses, and medical professionals.</p>
+                <span class="company-jobs">85+ Openings</span>
+            </div>
+
+            <div class="company-card">
+                <img src="https://images.unsplash.com/photo-1427504494785-cdcb3a73f90d?w=400&h=180&fit=crop" alt="Educational institution and learning environment" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <div class="company-logo">EDU</div>
+                <h3 class="company-name">EduVerse Academy</h3>
+                <p class="company-sector">Education</p>
+                <p class="company-info">Premier educational institution seeking talented teachers, administrators, and educational coordinators.</p>
+                <span class="company-jobs">60+ Openings</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== APPLICATION FORM SECTION ============== -->
+    <section class="form-section" id="form-section">
+        <h2 class="section-title" style="color: white; margin-bottom: 0.5rem;">Join Our Talent Pool</h2>
+        <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.8); margin-bottom: 2rem;">Apply now and unlock your career potential in Tinsukia</p>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; max-width: 1400px; margin: 0 auto;" class="form-wrapper">
+            <div>
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=600&fit=crop" alt="Professional team collaboration and career growth" style="width: 100%; border-radius: 15px; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3); height: 500px; object-fit: cover;">
+            </div>
+            
+            <div class="form-container">
+                <div class="success-message" id="successMessage">
+                    ✓ Thank you! Your application has been submitted successfully. We'll contact you soon!
+                </div>
+
+                <form id="applicationForm" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+                        <div class="error-message">Please enter your full name</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mobileNumber">Mobile Number (+91) *</label>
+                        <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="9876543210" pattern="[0-9]{10}" required>
+                        <div class="error-message">Please enter a valid 10-digit mobile number</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email ID *</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        <div class="error-message">Please enter a valid email address</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="about">About Yourself *</label>
+                        <textarea id="about" name="about" placeholder="Tell us about your skills, experience, and career aspirations..." required></textarea>
+                        <div class="error-message">Please tell us about yourself (minimum 20 characters)</div>
+                    </div>
+
+                    <button type="submit" class="form-submit">Submit Application</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== FOOTER ============== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Site4People</h4>
+                <p>Site4People is India's premier job portal connecting talented professionals with leading employers across diverse industries. Our mission is to empower careers and transform lives.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <p><a href="#hero">Home</a></p>
+                <p><a href="#work-history">Our Legacy</a></p>
+                <p><a href="#job-history">Browse Jobs</a></p>
+                <p><a href="#companies">Companies</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>📍 Tinsukia, Assam, India</p>
+                <p>📧 info@site4people.com</p>
+                <p>📱 +91-XXXXX-XXXXX</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <p><a href="#">Facebook</a></p>
+                <p><a href="#">Twitter</a></p>
+                <p><a href="#">LinkedIn</a></p>
+                <p><a href="#">Instagram</a></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Site4People. All rights reserved. | <a href="#" style="color: var(--accent-gold); text-decoration: none;">Privacy Policy</a> | <a href="#" style="color: var(--accent-gold); text-decoration: none;">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // ============== FORM VALIDATION & SUBMISSION ============== 
+        function validateForm() {
+            const form = document.getElementById('applicationForm');
+            const fullName = document.getElementById('fullName');
+            const mobileNumber = document.getElementById('mobileNumber');
+            const email = document.getElementById('email');
+            const about = document.getElementById('about');
+
+            let isValid = true;
+
+            // Validate Full Name
+            if (!fullName.value.trim() || fullName.value.trim().length < 3) {
+                markFieldError(fullName, 'Please enter a valid full name');
+                isValid = false;
+            } else {
+                markFieldSuccess(fullName);
+            }
+
+            // Validate Mobile Number
+            const mobileRegex = /^[0-9]{10}$/;
+            if (!mobileRegex.test(mobileNumber.value)) {
+                markFieldError(mobileNumber, 'Please enter a valid 10-digit mobile number');
+                isValid = false;
+            } else {
+                markFieldSuccess(mobileNumber);
+            }
+
+            // Validate Email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email.value)) {
+                markFieldError(email, 'Please enter a valid email address');
+                isValid = false;
+            } else {
+                markFieldSuccess(email);
+            }
+
+            // Validate About
+            if (about.value.trim().length < 20) {
+                markFieldError(about, 'Please write at least 20 characters about yourself');
+                isValid = false;
+            } else {
+                markFieldSuccess(about);
+            }
+
+            return isValid;
+        }
+
+        function markFieldError(field, message) {
+            const formGroup = field.closest('.form-group');
+            formGroup.classList.add('error');
+            const errorMsg = formGroup.querySelector('.error-message');
+            if (errorMsg) errorMsg.textContent = message;
+        }
+
+        function markFieldSuccess(field) {
+            const formGroup = field.closest('.form-group');
+            formGroup.classList.remove('error');
+        }
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+
+            if (validateForm()) {
+                // Get form data
+                const formData = {
+                    fullName: document.getElementById('fullName').value,
+                    mobileNumber: document.getElementById('mobileNumber').value,
+                    email: document.getElementById('email').value,
+                    about: document.getElementById('about').value,
+                    timestamp: new Date().toISOString()
+                };
+
+                // Track event in Google Analytics
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'form_submit', {
+                        'event_category': 'engagement',
+                        'event_label': 'job_application',
+                        'full_name': formData.fullName,
+                        'email': formData.email
+                    });
+                }
+
+                // Log to console (in production, send to server)
+                console.log('Form Submitted:', formData);
+
+                // Show success message
+                const successMessage = document.getElementById('successMessage');
+                successMessage.classList.add('show');
+
+                // Reset form
+                document.getElementById('applicationForm').reset();
+
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    successMessage.classList.remove('show');
+                }, 5000);
+            }
+        }
+
+        // ============== SCROLL ANIMATIONS ============== 
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-animate').forEach(el => {
+            observer.observe(el);
+        });
+
+        // ============== SMOOTH SCROLLING ============== 
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // ============== PAGE LOAD ANIMATIONS ============== 
+        window.addEventListener('load', () => {
+            document.body.style.animation = 'none';
+        });
+
+        // ============== FORM REAL-TIME VALIDATION ============== 
+        document.getElementById('fullName').addEventListener('blur', function() {
+            if (this.value.trim().length < 3) {
+                markFieldError(this, 'Name must be at least 3 characters');
+            } else {
+                markFieldSuccess(this);
+            }
+        });
+
+        document.getElementById('mobileNumber').addEventListener('blur', function() {
+            const mobileRegex = /^[0-9]{10}$/;
+            if (!mobileRegex.test(this.value)) {
+                markFieldError(this, 'Please enter a valid 10-digit mobile number');
+            } else {
+                markFieldSuccess(this);
+            }
+        });
+
+        document.getElementById('email').addEventListener('blur', function() {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(this.value)) {
+                markFieldError(this, 'Please enter a valid email address');
+            } else {
+                markFieldSuccess(this);
+            }
+        });
+
+        document.getElementById('about').addEventListener('blur', function() {
+            if (this.value.trim().length < 20) {
+                markFieldError(this, 'Please write at least 20 characters');
+            } else {
+                markFieldSuccess(this);
+            }
+        });
+    </script>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "JobPortal",
+        "name": "Site4People",
+        "description": "Premier job portal for opportunities in Tinsukia, Assam",
+        "url": "https://site4people-tinsukia.com",
+        "areaServed": {
+            "@type": "City",
+            "name": "Tinsukia",
+            "address": {
+                "@type": "PostalAddress",
+                "addressRegion": "Assam",
+                "addressCountry": "IN"
+            }
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-XXXXX-XXXXX",
+            "contactType": "Customer Service",
+            "email": "info@site4people.com"
+        },
+        "sameAs": [
+            "https://www.facebook.com/site4people",
+            "https://www.twitter.com/site4people",
+            "https://www.linkedin.com/company/site4people"
+        ]
+    }
+    </script>
+</body>
+</html>
